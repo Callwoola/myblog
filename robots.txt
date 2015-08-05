@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow:
 
-Sitemap: http://callwoola.github.io/myblog/sitemap.xml 
+Sitemap: http://callwoola.github.io/myblog/sitemap.xml
