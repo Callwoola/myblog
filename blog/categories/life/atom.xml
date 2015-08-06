@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Callwoola_Neo_Blog]]></title>
-  <link href="http://www.woola.net//atom.xml" rel="self"/>
+  <title><![CDATA[Category: Life | Callwoola_Neo_Blog]]></title>
+  <link href="http://www.woola.net//blog/categories/life/atom.xml" rel="self"/>
   <link href="http://www.woola.net//"/>
   <updated>2015-08-06T23:26:54+08:00</updated>
   <id>http://www.woola.net//</id>
@@ -23,12 +23,9 @@
 <p>尽管思绪万千，但是还是写不出东西。
 就像吃错了东西，肚子疼但是拉不出屎！</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">shit</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
+<pre><code class="python ">
+shit.run()
+</code></pre>
 ]]></content>
   </entry>
   
