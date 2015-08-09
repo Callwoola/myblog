@@ -4,7 +4,7 @@
   <title><![CDATA[Callwoola_Neo_Blog]]></title>
   <link href="http://blog.woola.net//atom.xml" rel="self"/>
   <link href="http://blog.woola.net//"/>
-  <updated>2015-08-09T22:46:28+08:00</updated>
+  <updated>2015-08-09T22:48:45+08:00</updated>
   <id>http://blog.woola.net//</id>
   <author>
     <name><![CDATA[Neo]]></name>
@@ -43,7 +43,7 @@
 类似于jquery的语法来查询XML文档。pyquery使用lxml库来实现快速XML和HTML操作。
 使用easy_install 或者pip安装往往都是应为 lxml库没有安装造成安装失败，所以请事先安装lxml</p>
 
-<p>[download][#<a href="http://lxml.de/installation.html">http://lxml.de/installation.html</a>]
+<p><a href="#http://lxml.de/installation.html">download</a>
 本人使用python2.7</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
