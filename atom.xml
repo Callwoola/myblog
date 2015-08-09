@@ -4,7 +4,7 @@
   <title><![CDATA[Callwoola_Neo_Blog]]></title>
   <link href="http://blog.woola.net//atom.xml" rel="self"/>
   <link href="http://blog.woola.net//"/>
-  <updated>2015-08-07T00:00:51+08:00</updated>
+  <updated>2015-08-09T22:46:28+08:00</updated>
   <id>http://blog.woola.net//</id>
   <author>
     <name><![CDATA[Neo]]></name>
@@ -28,6 +28,41 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Pyquery]]></title>
+    <link href="http://blog.woola.net//blog/2014/05/08/pyquery/"/>
+    <updated>2014-05-08T22:36:52+08:00</updated>
+    <id>http://blog.woola.net//blog/2014/05/08/pyquery</id>
+    <content type="html"><![CDATA[<h2>python pyquery</h2>
+
+<p>pyquery，python程序员一定要了解的库，极其好用!
+类似于jquery的语法来查询XML文档。pyquery使用lxml库来实现快速XML和HTML操作。
+使用easy_install 或者pip安装往往都是应为 lxml库没有安装造成安装失败，所以请事先安装lxml</p>
+
+<p>[download][#<a href="http://lxml.de/installation.html">http://lxml.de/installation.html</a>]
+本人使用python2.7</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">pyquery</span> <span class="kn">import</span> <span class="n">PyQuery</span> <span class="k">as</span> <span class="n">pq</span>
+</span><span class='line'><span class="kn">from</span> <span class="nn">lxml</span> <span class="kn">import</span> <span class="n">etree</span>
+</span><span class='line'><span class="kn">import</span> <span class="nn">urllib</span>
+</span><span class='line'><span class="n">d</span> <span class="o">=</span> <span class="n">pq</span><span class="p">(</span><span class="o">&amp;</span><span class="n">quot</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">html</span><span class="o">&amp;&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">/</span><span class="n">html</span><span class="o">&amp;&amp;</span><span class="n">quot</span><span class="p">;)</span>
+</span><span class='line'><span class="n">d</span> <span class="o">=</span> <span class="n">pq</span><span class="p">(</span><span class="n">etree</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="o">&amp;</span><span class="n">quot</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">html</span><span class="o">&amp;&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">/</span><span class="n">html</span><span class="o">&amp;&amp;</span><span class="n">quot</span><span class="p">;))</span>
+</span><span class='line'><span class="n">d</span> <span class="o">=</span> <span class="n">pq</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s">&#39;http://google.com/&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="c"># d = pq(url=&#39;http://google.com/&#39;, opener=lambda url: urllib.urlopen(url).read())</span>
+</span><span class='line'><span class="n">d</span> <span class="o">=</span> <span class="n">pq</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">path_to_html_file</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
   </entry>
