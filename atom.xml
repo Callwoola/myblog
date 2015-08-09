@@ -4,7 +4,7 @@
   <title><![CDATA[Callwoola_Neo_Blog]]></title>
   <link href="http://blog.woola.net//atom.xml" rel="self"/>
   <link href="http://blog.woola.net//"/>
-  <updated>2015-08-09T22:48:45+08:00</updated>
+  <updated>2015-08-09T22:51:33+08:00</updated>
   <id>http://blog.woola.net//</id>
   <author>
     <name><![CDATA[Neo]]></name>
@@ -57,8 +57,8 @@
 </pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">pyquery</span> <span class="kn">import</span> <span class="n">PyQuery</span> <span class="k">as</span> <span class="n">pq</span>
 </span><span class='line'><span class="kn">from</span> <span class="nn">lxml</span> <span class="kn">import</span> <span class="n">etree</span>
 </span><span class='line'><span class="kn">import</span> <span class="nn">urllib</span>
-</span><span class='line'><span class="n">d</span> <span class="o">=</span> <span class="n">pq</span><span class="p">(</span><span class="o">&amp;</span><span class="n">quot</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">html</span><span class="o">&amp;&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">/</span><span class="n">html</span><span class="o">&amp;&amp;</span><span class="n">quot</span><span class="p">;)</span>
-</span><span class='line'><span class="n">d</span> <span class="o">=</span> <span class="n">pq</span><span class="p">(</span><span class="n">etree</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="o">&amp;</span><span class="n">quot</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">html</span><span class="o">&amp;&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">/</span><span class="n">html</span><span class="o">&amp;&amp;</span><span class="n">quot</span><span class="p">;))</span>
+</span><span class='line'><span class="n">d</span> <span class="o">=</span> <span class="n">pq</span><span class="p">(</span><span class="s">&#39;&lt;html&gt;&lt;/html&gt;&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="n">d</span> <span class="o">=</span> <span class="n">pq</span><span class="p">(</span><span class="n">etree</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="s">&quot;&lt;html&gt;&lt;/html&gt;&quot;</span><span class="p">))</span>
 </span><span class='line'><span class="n">d</span> <span class="o">=</span> <span class="n">pq</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s">&#39;http://google.com/&#39;</span><span class="p">)</span>
 </span><span class='line'><span class="c"># d = pq(url=&#39;http://google.com/&#39;, opener=lambda url: urllib.urlopen(url).read())</span>
 </span><span class='line'><span class="n">d</span> <span class="o">=</span> <span class="n">pq</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">path_to_html_file</span><span class="p">)</span>
