@@ -4,7 +4,7 @@
   <title><![CDATA[Callwoola_Neo_Blog]]></title>
   <link href="http://blog.woola.net//atom.xml" rel="self"/>
   <link href="http://blog.woola.net//"/>
-  <updated>2015-08-10T22:40:19+08:00</updated>
+  <updated>2015-08-10T22:45:12+08:00</updated>
   <id>http://blog.woola.net//</id>
   <author>
     <name><![CDATA[Neo]]></name>
@@ -18,17 +18,18 @@
     <link href="http://blog.woola.net//blog/2015/08/10/i-hate-windows/"/>
     <updated>2015-08-10T22:32:01+08:00</updated>
     <id>http://blog.woola.net//blog/2015/08/10/i-hate-windows</id>
-    <content type="html"><![CDATA[<h1>在不windows下面做开发是痛苦的 </h1>
+    <content type="html"><![CDATA[<h1>在windows下面做开发是痛苦的 </h1>
 
-<p>最开始我学习编程的时候，使用vs在windows开发，那时候是愉快的！</p>
-
-<p>无知的人都可爱，容易得到满足，当你了解这个世界接触更多东西了。回过头来一看。记忆确实那么不堪</p>
-
-<p>我不得不说，windows是人类历史性的产品，没有他人类社会不会发展的怎么快！这句话一点也不过分！</p>
+<p>最开始我学习编程的时候，使用vs在windows开发，那时候是愉快的！
+无知的人都可爱，容易得到满足，当你了解这个世界接触更多东西了。回过头来一看。记忆确实那么不堪
+我不得不说，windows是人类历史性的产品，没有他人类社会不会发展的怎么快！这句话一点也不过分！</p>
 
 <p>balabala&hellip;&hellip;&hellip;&hellip;.</p>
 
-<p>可是，使用windows，是糟糕的体验，我甚至都没有勇气写下去了！</p>
+<p>可是，使用windows，是糟糕的体验，我甚至都没有勇气写下去了！
+妈蛋我居然还使用thinkpad,越想越气！</p>
+
+<p><a href="https://github.com/Callwoola/start-server">quick settings you computer </a></p>
 ]]></content>
   </entry>
   
