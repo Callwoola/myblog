@@ -1,0 +1,27 @@
+---
+layout: post
+title: "pyquery"
+date: 2014-05-08 22:36:52 +0800
+comments: true
+categories: 
+---
+
+python pyquery
+-------------
+pyquery，python程序员一定要了解的库，极其好用!
+类似于jquery的语法来查询XML文档。pyquery使用lxml库来实现快速XML和HTML操作。
+使用easy_install 或者pip安装往往都是应为 lxml库没有安装造成安装失败，所以请事先安装lxml
+
+[download](#http://lxml.de/installation.html)
+本人使用python2.7
+
+```python
+from pyquery import PyQuery as pq
+from lxml import etree
+import urllib
+d = pq('<html></html>')
+d = pq(etree.fromstring("<html></html>"))
+d = pq(url='http://google.com/')
+# d = pq(url='http://google.com/', opener=lambda url: urllib.urlopen(url).read())
+d = pq(filename=path_to_html_file)
+```

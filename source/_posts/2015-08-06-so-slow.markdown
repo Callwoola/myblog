@@ -1,0 +1,21 @@
+---
+layout: post
+title: "so slow!"
+date: 2015-08-06 22:57:40 +0800
+comments: true
+author: Neo
+categories: [life,thinking]
+layout: post
+---
+
+又一个不眠夜
+=================
+尽管思绪万千，但是还是写不出东西。
+就像吃错了东西，肚子疼但是拉不出屎！
+
+```python 
+
+shit.run()
+
+```
+
