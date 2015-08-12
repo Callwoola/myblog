@@ -4,7 +4,7 @@
   <title><![CDATA[stay hungry stay foolish]]></title>
   <link href="http://blog.woola.net//atom.xml" rel="self"/>
   <link href="http://blog.woola.net//"/>
-  <updated>2015-08-11T22:53:34+08:00</updated>
+  <updated>2015-08-12T22:37:59+08:00</updated>
   <id>http://blog.woola.net//</id>
   <author>
     <name><![CDATA[Neo]]></name>
@@ -80,6 +80,21 @@
 
 
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Python 工具网站 !]]></title>
+    <link href="http://blog.woola.net//blog/2014/05/08/python_tool_tips/"/>
+    <updated>2014-05-08T22:57:40+08:00</updated>
+    <id>http://blog.woola.net//blog/2014/05/08/python_tool_tips</id>
+    <content type="html"><![CDATA[<h1>python 工具网站 !</h1>
+
+<p>python wheel文件 下载即用，</p>
+
+<p><a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">python-sites</a></p>
+
+<p>pythontip：<a href="http://pythontip.sinaapp.com/">links</a></p>
 ]]></content>
   </entry>
   
