@@ -4,7 +4,7 @@
   <title><![CDATA[stay hungry stay foolish]]></title>
   <link href="http://blog.woola.net//atom.xml" rel="self"/>
   <link href="http://blog.woola.net//"/>
-  <updated>2015-08-20T22:05:11+08:00</updated>
+  <updated>2015-08-21T23:30:43+08:00</updated>
   <id>http://blog.woola.net//</id>
   <author>
     <name><![CDATA[Neo]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Phpunit]]></title>
+    <link href="http://blog.woola.net//blog/2015/08/21/phpunit/"/>
+    <updated>2015-08-21T23:29:06+08:00</updated>
+    <id>http://blog.woola.net//blog/2015/08/21/phpunit</id>
+    <content type="html"><![CDATA[<p>不管什么时候都要养成写测试用例的好喜欢</p>
+
+<p>一定要学会写一手好测试用例！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Php_reverse]]></title>
