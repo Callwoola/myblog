@@ -1,0 +1,12 @@
+---
+layout: post
+title: "phpunit"
+date: 2015-08-21 23:29:06 +0800
+comments: true
+categories: 
+---
+
+
+不管什么时候都要养成写测试用例的好喜欢
+
+一定要学会写一手好测试用例！
