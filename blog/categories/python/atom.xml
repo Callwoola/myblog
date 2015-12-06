@@ -2,14 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Python | stay hungry stay foolish]]></title>
-  <link href="http://blog.woola.net//blog/categories/python/atom.xml" rel="self"/>
-  <link href="http://blog.woola.net//"/>
-<<<<<<< HEAD
-  <updated>2015-12-06T14:21:37+08:00</updated>
-=======
-  <updated>2015-08-26T21:40:45+08:00</updated>
->>>>>>> ec3179fcb70603be5f06cd72f8bf544ad4c0e7fd
-  <id>http://blog.woola.net//</id>
+  <link href="http://blog.woola.net/myblog/blog/categories/python/atom.xml" rel="self"/>
+  <link href="http://blog.woola.net/myblog/"/>
+  <updated>2015-12-06T15:03:00+08:00</updated>
+  <id>http://blog.woola.net/myblog/</id>
   <author>
     <name><![CDATA[Neo]]></name>
     <email><![CDATA[call@woola.net]]></email>
@@ -19,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Python 工具网站 !]]></title>
-    <link href="http://blog.woola.net//blog/2014/05/08/python_tool_tips/"/>
+    <link href="http://blog.woola.net/myblog/blog/2014/05/08/python_tool_tips/"/>
     <updated>2014-05-08T22:57:40+08:00</updated>
-    <id>http://blog.woola.net//blog/2014/05/08/python_tool_tips</id>
+    <id>http://blog.woola.net/myblog/blog/2014/05/08/python_tool_tips</id>
     <content type="html"><![CDATA[<h1>python 工具网站 !</h1>
 
 <p>python wheel文件 下载即用，</p>

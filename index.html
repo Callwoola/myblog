@@ -9,11 +9,7 @@
   <meta name="author" content="Neo">
 
   
-<<<<<<< HEAD
-  <meta name="description" content="
-=======
-  <meta name="description" content="不管什么时候都要养成写测试用例的好喜欢 一定要学会写一手好测试用例！
->>>>>>> ec3179fcb70603be5f06cd72f8bf544ad4c0e7fd
+  <meta name="description" content="我曾经不止一次的强调,装逼是一门艺术! 艺术灵感来源清晰的思路! Imgur
 ">
   
 
@@ -23,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.woola.net/">
+  <link rel="canonical" href="http://blog.woola.net/myblog">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/myblog/atom.xml" rel="alternate" title="stay hungry stay foolish" type="application/atom+xml">
@@ -45,11 +41,7 @@
   <header role="banner"><hgroup>
   <h1><a href="/">stay hungry stay foolish</a></h1>
   
-<<<<<<< HEAD
     <h2>love Ruby.</h2>
-=======
-    <h2>A blogging framework for hackers.</h2>
->>>>>>> ec3179fcb70603be5f06cd72f8bf544ad4c0e7fd
   
 </hgroup>
 
@@ -77,7 +69,7 @@
     
       <form action="https://www.google.com/search" method="get">
         <fieldset role="search">
-          <input type="hidden" name="sitesearch" value="blog.woola.net/" />
+          <input type="hidden" name="sitesearch" value="blog.woola.net/myblog" />
     
           <input class="search" type="text" name="q" results="0" placeholder="Search"/>
         </fieldset>
@@ -93,37 +85,6 @@
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-<<<<<<< HEAD
-      <h1 class="entry-title"><a href="/blog/2015/12/06/test/">Test</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-12-06T01:20:12+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:20 am</span></time>
-        
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">
-</div>
-  
-  
-
-
-    </article>
   
   
     <article>
@@ -164,8 +125,6 @@
       
   <header>
     
-=======
->>>>>>> ec3179fcb70603be5f06cd72f8bf544ad4c0e7fd
       <h1 class="entry-title"><a href="/blog/2015/08/21/phpunit/">Phpunit</a></h1>
     
     
@@ -690,8 +649,6 @@ $private_properties = $class->getProperties(ReflectionProperty::IS_PRIVATE);
 
     </article>
   
-<<<<<<< HEAD
-=======
   
     <article>
       
@@ -776,372 +733,6 @@ $private_properties = $class->getProperties(ReflectionProperty::IS_PRIVATE);
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/05/05/mongodb_php_python/">Mongodb 速度成法</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-05-05T22:57:40+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:57 pm</span></time>
-        
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>mongo的优点就不说了，我觉得在我认证范围内的业务大部分可以用mongo,这里也主要介绍python 和php的安装和使用</p>
-
-<p>根据自己的系统选择 解压后在bin里面 有很多个工具</p>
-
-<ul>
-<li><p>Mongod.exe 是用来连接到mongo数据库服务器的，即服务器端。</p></li>
-<li><p>Mongo.exe 是用来启动</p></li>
-<li><p>MongoDB shell的，即客户端。</p></li>
-</ul>
-
-
-<p>其他文件:</p>
-
-<ul>
-<li><p>mongodump 逻辑备份工具。</p></li>
-<li><p>mongorestore 逻辑恢复工具。</p></li>
-<li><p>mongoexport 数据导出工具。</p></li>
-<li><p>mongoimport 数据导入工具。</p></li>
-</ul>
-
-
-<p><code>启动 X:/X/bin/mongod.exe  --dbpath=x:/x/data/db</code></p>
-
-<p>(例如)
-dbpath 是自动的数据库存放位置</p>
-
-<p>好了那么现在我们就可以进入客户端了</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span><span class="n">mongo</span><span class="o">.</span><span class="na">exe</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p> 4.2）创建collection并插入数据</p>
-
-<p> 在传统关系型数据库中，创建完了库后接下来会创建表，但是在mongoDB中没有“表”的概念，与其对应的一个概念是集合，即collection。</p>
-
-<p> 在shell 命令窗口键入如下命令：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">insert</span><span class="o">({</span><span class="err">&#39;</span><span class="n">name</span><span class="sc">&#39;:&#39;</span><span class="n">xumingxiang</span><span class="sc">&#39;,&#39;</span><span class="n">sex</span><span class="sc">&#39;:&#39;</span><span class="n">man</span><span class="err">&#39;</span><span class="o">})</span> <span class="c1">// 这条命令是向users 集合中插入一条数据。如果集合users不存在，则会先新建一个，然后再插入数据，参数以JSON格式传入。</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>因为我们后面要测试删除数据，所以我们再插入一条数据：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">insert</span><span class="o">({</span><span class="err">&#39;</span><span class="n">name</span><span class="err">&#39;</span><span class="o">:</span><span class="n">xiangshu</span><span class="sc">&#39;,&#39;</span><span class="n">sex</span><span class="sc">&#39;:&#39;</span><span class="n">man</span><span class="err">&#39;</span><span class="o">})</span>
-</span><span class='line'><span class="mf">4.3</span><span class="err">）</span>
-</span><span class='line'><span class="c1">//在上面4.1）和4.2）我们创建了数据库，创建了集合，还插入了两条数据，那么这些操作有没有执行成功呢？我们来查询一下：</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>在shell 命令窗口键入如下命令：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span><span class="n">show</span> <span class="n">dbs</span> <span class="c1">// 显示所有数据库  </span>
-</span><span class='line'><span class="o">&gt;</span><span class="n">show</span> <span class="n">collections</span> <span class="c1">// 显示当前数据库下的所有集合  </span>
-</span><span class='line'><span class="o">&gt;</span><span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">find</span><span class="o">()</span> <span class="c1">// 显示users集合下的所有数据文档</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p> 看我用红色标记的部分。这说明我们之前的操作是成功的。我们还看到系统给每条记录分配了一个惟一主键 _id 。</p>
-
-<p>4.4）更新数据</p>
-
-<p> 现在我们要把第二条数据的sex改成女即“women”</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">update</span><span class="o">({</span><span class="err">&#39;</span><span class="n">name</span><span class="sc">&#39;:&#39;</span><span class="n">xiangshu</span><span class="err">&#39;</span><span class="o">},{</span><span class="err">&#39;</span><span class="n">$set</span><span class="err">&#39;</span><span class="o">:{</span><span class="err">&#39;</span><span class="n">sex</span><span class="sc">&#39;:&#39;</span><span class="n">women</span><span class="err">&#39;</span><span class="o">}},</span><span class="n">upsert</span><span class="o">=</span><span class="kc">true</span><span class="o">,</span><span class="n">multi</span><span class="o">=</span><span class="kc">false</span><span class="o">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p> 解释一下几个参数：</p>
-
-<p> 第一：查询的条件</p>
-
-<p> 第二：更新的字段</p>
-
-<p> 第三：如果不存在则插入</p>
-
-<p> 第四：是否允许修改多条记录</p>
-
-<p>4.5)删除记录</p>
-
-<p> 我们现在要把第一条记录即'name'为'xumingxiang'的</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'> <span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span> <span class="n">users</span><span class="o">.</span><span class="na">remove</span><span class="o">({</span><span class="err">&#39;</span><span class="n">name</span><span class="sc">&#39;:&#39;</span><span class="n">xumingxiang</span><span class="err">&#39;</span><span class="o">})</span>
-</span><span class='line'> <span class="n">我们在检验一下4</span><span class="err">）</span><span class="mi">5</span><span class="err">）</span><span class="n">两步有没有操作成功</span><span class="err">，</span><span class="n">在shell</span> <span class="n">命令窗口键入如下命令</span><span class="err">：</span>
-</span><span class='line'>
-</span><span class='line'> <span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">find</span><span class="o">()</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p> 从输出的界面我们看到现在只剩下一条'name'为'xiangshu'的了，并且它的'sex'为'women'，这说明4）5)两步操作成功了。</p>
-
-<p> 4.6）删除所有记录</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">remove</span><span class="o">()</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p> 4.7) 删除collection</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">drop</span><span class="o">()</span> <span class="c1">//如果删除成功会返回“true”，否则返回“false”</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>4.8）删除当前数据库</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">dropDatabase</span><span class="o">()</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>mongo 相关命令</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">AddUser</span><span class="o">(</span><span class="n">username</span><span class="o">,</span><span class="n">password</span><span class="o">)</span>  <span class="n">添加用户</span>
-</span><span class='line'>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">auth</span><span class="o">(</span><span class="n">usrename</span><span class="o">,</span><span class="n">password</span><span class="o">)</span>     <span class="n">设置数据库连接验证</span>
-</span><span class='line'>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">cloneDataBase</span><span class="o">(</span><span class="n">fromhost</span><span class="o">)</span>     <span class="n">从目标服务器克隆一个数据库</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">commandHelp</span><span class="o">(</span><span class="n">name</span><span class="o">)</span>           <span class="n">returns</span> <span class="n">the</span> <span class="n">help</span> <span class="k">for</span> <span class="n">the</span> <span class="n">command</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">copyDatabase</span><span class="o">(</span><span class="n">fromdb</span><span class="o">,</span><span class="n">todb</span><span class="o">,</span><span class="n">fromhost</span><span class="o">)</span>  <span class="n">复制数据库fromdb</span><span class="o">---</span><span class="n">源数据库名称</span><span class="err">，</span><span class="n">todb</span><span class="o">---</span><span class="n">目标数据库名称</span><span class="err">，</span><span class="n">fromhost</span><span class="o">---</span><span class="n">源数据库服务器地址</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">createCollection</span><span class="o">(</span><span class="n">name</span><span class="o">,{</span><span class="nl">size:</span><span class="mi">3333</span><span class="o">,</span><span class="nl">capped:</span><span class="mi">333</span><span class="o">,</span><span class="nl">max:</span><span class="mi">88888</span><span class="o">})</span>  <span class="n">创建一个数据集</span><span class="err">，</span><span class="n">相当于一个表</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">currentOp</span><span class="o">()</span>                 <span class="n">取消当前库的当前操作</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">dropDataBase</span><span class="o">()</span>              <span class="n">删除当前数据库</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">eval</span><span class="o">(</span><span class="n">func</span><span class="o">,</span><span class="n">args</span><span class="o">)</span>             <span class="n">run</span> <span class="n">code</span> <span class="n">server</span><span class="o">-</span><span class="n">side</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getCollection</span><span class="o">(</span><span class="n">cname</span><span class="o">)</span>        <span class="n">取得一个数据集合</span><span class="err">，</span><span class="n">同用法</span><span class="err">：</span><span class="n">db</span><span class="o">[</span><span class="err">&#39;</span><span class="n">cname</span><span class="err">&#39;</span><span class="o">]</span> <span class="n">or</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getCollenctionNames</span><span class="o">()</span>       <span class="n">取得所有数据集合的名称列表</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getLastError</span><span class="o">()</span>              <span class="n">返回最后一个错误的提示消息</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getLastErrorObj</span><span class="o">()</span>           <span class="n">返回最后一个错误的对象</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getMongo</span><span class="o">()</span>                  <span class="n">取得当前服务器的连接对象get</span> <span class="n">the</span> <span class="n">server</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getMondo</span><span class="o">().</span><span class="na">setSlaveOk</span><span class="o">()</span>     <span class="n">allow</span> <span class="k">this</span> <span class="n">connection</span> <span class="n">to</span> <span class="n">read</span> <span class="n">from</span> <span class="n">then</span> <span class="n">nonmaster</span> <span class="n">membr</span> <span class="n">of</span> <span class="n">a</span> <span class="n">replica</span> <span class="n">pair</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getName</span><span class="o">()</span>                   <span class="n">返回当操作数据库的名称</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getPrevError</span><span class="o">()</span>              <span class="n">返回上一个错误对象</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getProfilingLevel</span><span class="o">()</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getReplicationInfo</span><span class="o">()</span>        <span class="n">获得重复的数据</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getSisterDB</span><span class="o">(</span><span class="n">name</span><span class="o">)</span>           <span class="n">get</span> <span class="n">the</span> <span class="n">db</span> <span class="n">at</span> <span class="n">the</span> <span class="n">same</span> <span class="n">server</span> <span class="n">as</span> <span class="k">this</span> <span class="n">onew</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">killOp</span><span class="o">()</span>                    <span class="n">停止</span><span class="err">（</span><span class="n">杀死</span><span class="err">）</span><span class="n">在当前库的当前操作</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">printCollectionStats</span><span class="o">()</span>      <span class="n">返回当前库的数据集状态</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">printReplicationInfo</span><span class="o">()</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">printSlaveReplicationInfo</span><span class="o">()</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">printShardingStatus</span><span class="o">()</span>       <span class="n">返回当前数据库是否为共享数据库</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">removeUser</span><span class="o">(</span><span class="n">username</span><span class="o">)</span>        <span class="n">删除用户</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">repairDatabase</span><span class="o">()</span>            <span class="n">修复当前数据库</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">resetError</span><span class="o">()</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">runCommand</span><span class="o">(</span><span class="n">cmdObj</span><span class="o">)</span>          <span class="n">run</span> <span class="n">a</span> <span class="n">database</span> <span class="n">command</span><span class="o">.</span> <span class="k">if</span> <span class="n">cmdObj</span> <span class="n">is</span> <span class="n">a</span> <span class="n">string</span><span class="o">,</span> <span class="n">turns</span> <span class="n">it</span> <span class="n">into</span> <span class="o">{</span><span class="nl">cmdObj:</span><span class="mi">1</span><span class="o">}</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">setProfilingLevel</span><span class="o">(</span><span class="n">level</span><span class="o">)</span>    <span class="mi">0</span><span class="o">=</span><span class="n">off</span><span class="o">,</span><span class="mi">1</span><span class="o">=</span><span class="n">slow</span><span class="o">,</span><span class="mi">2</span><span class="o">=</span><span class="n">all</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">shutdownServer</span><span class="o">()</span>            <span class="n">关闭当前服务程序</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">version</span><span class="o">()</span>                   <span class="n">返回当前程序的版本信息</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">})</span>          <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">10</span><span class="n">的数据集</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">}).</span><span class="na">count</span><span class="o">()</span>  <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">10</span><span class="n">的数据总数</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">}).</span><span class="na">limit</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span> <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">10</span><span class="n">的数据集从第二条开始的数据集</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">}).</span><span class="na">skip</span><span class="o">(</span><span class="mi">8</span><span class="o">)</span>  <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">10</span><span class="n">的数据集从0到第八条的数据集</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">}).</span><span class="na">limit</span><span class="o">(</span><span class="mi">2</span><span class="o">).</span><span class="na">skip</span><span class="o">(</span><span class="mi">8</span><span class="o">)</span>  <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">1</span><span class="o">=</span><span class="n">的数据集从第二条到第八条的数据</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">}).</span><span class="na">sort</span><span class="o">()</span>   <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">10</span><span class="n">的排序数据集</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">findOne</span><span class="o">([</span><span class="n">query</span><span class="o">])</span>       <span class="n">返回符合条件的一条数据</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">getDB</span><span class="o">()</span>                <span class="n">返回此数据集所属的数据库名称</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">getIndexes</span><span class="o">()</span>           <span class="n">返回些数据集的索引信息</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">group</span><span class="o">({</span><span class="nl">key:</span><span class="o">...,</span><span class="nl">initial:</span><span class="o">...,</span><span class="nl">reduce:</span><span class="o">...[,</span><span class="nl">cond:</span><span class="o">...]})</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">mapReduce</span><span class="o">(</span><span class="n">mayFunction</span><span class="o">,</span><span class="n">reduceFunction</span><span class="o">,&lt;</span><span class="n">optional</span> <span class="n">params</span><span class="o">&gt;)</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">query</span><span class="o">)</span>                      <span class="n">在数据集中删除一条数据</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">renameCollection</span><span class="o">(</span><span class="n">newName</span><span class="o">)</span>          <span class="n">重命名些数据集名称</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">save</span><span class="o">(</span><span class="n">obj</span><span class="o">)</span>                          <span class="n">往数据集中插入一条数据</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">stats</span><span class="o">()</span>                            <span class="n">返回此数据集的状态</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">storageSize</span><span class="o">()</span>                      <span class="n">返回此数据集的存储大小</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">totalIndexSize</span><span class="o">()</span>                   <span class="n">返回此数据集的索引文件大小</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">totalSize</span><span class="o">()</span>                        <span class="n">返回些数据集的总大小</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">update</span><span class="o">(</span><span class="n">query</span><span class="o">,</span><span class="n">object</span><span class="o">[,</span><span class="n">upsert_bool</span><span class="o">])</span> <span class="n">在此数据集中更新一条数据</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">validate</span><span class="o">()</span>                         <span class="n">验证此数据集</span>
-</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">getShardVersion</span><span class="o">()</span>                  <span class="n">返回数据集共享版本号</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>与sql语法比较</p>
-
-<table>
-<thead>
-<tr>
-<th> MongoDB语法   </th>
-<th> MySql语法 </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>db.test.find({&lsquo;name&rsquo;:&lsquo;foobar&rsquo;}) </td>
-<td> select * from test where name=&lsquo;foobar&rsquo;</td>
-</tr>
-<tr>
-<td>db.test.find()                  </td>
-<td> select * from test</td>
-</tr>
-<tr>
-<td>db.test.find({&lsquo;ID&rsquo;:10}).count() </td>
-<td>select count(*) from test where ID=10</td>
-</tr>
-<tr>
-<td>db.test.find().skip(10).limit(20)     </td>
-<td>select * from test limit 10,20</td>
-</tr>
-<tr>
-<td>db.test.find({&lsquo;ID&rsquo;:{$in:[25,35,45]}}) </td>
-<td>select * from test where ID in (25,35,45)</td>
-</tr>
-<tr>
-<td>db.test.find().sort({&lsquo;ID&rsquo;:-1})        </td>
-<td>select * from test order by ID desc</td>
-</tr>
-<tr>
-<td>db.test.distinct(&lsquo;name&rsquo;,{&lsquo;ID&rsquo;:{$lt:20}})  </td>
-<td>select distinct(name) from test where ID&lt;20</td>
-</tr>
-<tr>
-<td>db.test.group({key:{&lsquo;name&rsquo;:true},cond:{&lsquo;name&rsquo;:&lsquo;foo&rsquo;},reduce:function(obj,prev){prev.msum+=obj.marks;},initial:{msum:0}})  </td>
-<td>select name,sum(marks) from test group by name</td>
-</tr>
-<tr>
-<td>db.test.find(&lsquo;this.ID&lt;20&rsquo;,{name:1})  </td>
-<td>select name from test where ID&lt;20</td>
-</tr>
-<tr>
-<td>db.test.insert({&lsquo;name&rsquo;:&lsquo;foobar&rsquo;,&lsquo;age&rsquo;:25})&lt;==>insert into test (&lsquo;name&rsquo;,&lsquo;age&rsquo;) values(&lsquo;foobar&rsquo;,25)</td>
-<td></td>
-</tr>
-<tr>
-<td>db.test.remove({})                </td>
-<td>delete * from test</td>
-</tr>
-<tr>
-<td>db.test.remove({&lsquo;age&rsquo;:20})        </td>
-<td>delete test where age=20</td>
-</tr>
-<tr>
-<td>db.test.remove({&lsquo;age&rsquo;:{$lt:20}})  </td>
-<td>elete test where age&lt;20</td>
-</tr>
-<tr>
-<td>db.test.remove({&lsquo;age&rsquo;:{$lte:20}}) </td>
-<td>delete test where age&lt;=20</td>
-</tr>
-<tr>
-<td>db.test.remove({&lsquo;age&rsquo;:{$gt:20}})  </td>
-<td>delete test where age>20</td>
-</tr>
-<tr>
-<td>db.test.remove({&lsquo;age&rsquo;:{$gte:20}}) </td>
-<td>delete test where age>=20</td>
-</tr>
-<tr>
-<td>db.test.remove({&lsquo;age&rsquo;:{$ne:20}})  </td>
-<td>delete test where age!=20</td>
-</tr>
-<tr>
-<td>db.test.update({&lsquo;name&rsquo;:&lsquo;foobar&rsquo;},{$set:{&lsquo;age&rsquo;:36}}) </td>
-<td>update test set age=36 where name=&lsquo;foobar&rsquo;</td>
-</tr>
-</tbody>
-</table>
-
-
-<p>可视化的客户端管理工具MongoVUE</p>
-
-<p>使用mongo.exe 管理数据库虽然可行，功能也挺强大，但每次都要敲命令，即繁琐枯燥而且效率低下。下面介绍一款Windows下的可视化操作的管理工具MongoVUE</p>
-
-<p><a href="http://www.mongovue.com/downloads/">下载地址：</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
->>>>>>> ec3179fcb70603be5f06cd72f8bf544ad4c0e7fd
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>

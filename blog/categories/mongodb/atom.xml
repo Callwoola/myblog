@@ -2,14 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Mongodb | stay hungry stay foolish]]></title>
-  <link href="http://blog.woola.net//blog/categories/mongodb/atom.xml" rel="self"/>
-  <link href="http://blog.woola.net//"/>
-<<<<<<< HEAD
-  <updated>2015-12-06T14:21:37+08:00</updated>
-=======
-  <updated>2015-08-26T21:40:45+08:00</updated>
->>>>>>> ec3179fcb70603be5f06cd72f8bf544ad4c0e7fd
-  <id>http://blog.woola.net//</id>
+  <link href="http://blog.woola.net/myblog/blog/categories/mongodb/atom.xml" rel="self"/>
+  <link href="http://blog.woola.net/myblog/"/>
+  <updated>2015-12-06T15:03:00+08:00</updated>
+  <id>http://blog.woola.net/myblog/</id>
   <author>
     <name><![CDATA[Neo]]></name>
     <email><![CDATA[call@woola.net]]></email>
@@ -19,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Mongodb 速度成法]]></title>
-    <link href="http://blog.woola.net//blog/2014/05/05/mongodb_php_python/"/>
+    <link href="http://blog.woola.net/myblog/blog/2014/05/05/mongodb_php_python/"/>
     <updated>2014-05-05T22:57:40+08:00</updated>
-    <id>http://blog.woola.net//blog/2014/05/05/mongodb_php_python</id>
+    <id>http://blog.woola.net/myblog/blog/2014/05/05/mongodb_php_python</id>
     <content type="html"><![CDATA[<p>mongo的优点就不说了，我觉得在我认证范围内的业务大部分可以用mongo,这里也主要介绍python 和php的安装和使用</p>
 
 <p>根据自己的系统选择 解压后在bin里面 有很多个工具</p>

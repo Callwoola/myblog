@@ -2,14 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[stay hungry stay foolish]]></title>
-  <link href="http://blog.woola.net//atom.xml" rel="self"/>
-  <link href="http://blog.woola.net//"/>
-<<<<<<< HEAD
-  <updated>2015-12-06T14:21:37+08:00</updated>
-=======
-  <updated>2015-08-26T21:40:45+08:00</updated>
->>>>>>> ec3179fcb70603be5f06cd72f8bf544ad4c0e7fd
-  <id>http://blog.woola.net//</id>
+  <link href="http://blog.woola.net/myblog/atom.xml" rel="self"/>
+  <link href="http://blog.woola.net/myblog/"/>
+  <updated>2015-12-06T15:03:00+08:00</updated>
+  <id>http://blog.woola.net/myblog/</id>
   <author>
     <name><![CDATA[Neo]]></name>
     <email><![CDATA[call@woola.net]]></email>
@@ -18,20 +14,10 @@
 
   
   <entry>
-<<<<<<< HEAD
-    <title type="html"><![CDATA[Test]]></title>
-    <link href="http://blog.woola.net//blog/2015/12/06/test/"/>
-    <updated>2015-12-06T01:20:12+08:00</updated>
-    <id>http://blog.woola.net//blog/2015/12/06/test</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[太多事情了, 需要清理一下思绪]]></title>
-    <link href="http://blog.woola.net//blog/2015/12/06/too-much-thing/"/>
+    <link href="http://blog.woola.net/myblog/blog/2015/12/06/too-much-thing/"/>
     <updated>2015-12-06T00:43:26+08:00</updated>
-    <id>http://blog.woola.net//blog/2015/12/06/too-much-thing</id>
+    <id>http://blog.woola.net/myblog/blog/2015/12/06/too-much-thing</id>
     <content type="html"><![CDATA[<p>我曾经不止一次的强调,装逼是一门艺术!</p>
 
 <p>艺术灵感来源清晰的思路!</p>
@@ -41,12 +27,10 @@
   </entry>
   
   <entry>
-=======
->>>>>>> ec3179fcb70603be5f06cd72f8bf544ad4c0e7fd
     <title type="html"><![CDATA[Phpunit]]></title>
-    <link href="http://blog.woola.net//blog/2015/08/21/phpunit/"/>
+    <link href="http://blog.woola.net/myblog/blog/2015/08/21/phpunit/"/>
     <updated>2015-08-21T23:29:06+08:00</updated>
-    <id>http://blog.woola.net//blog/2015/08/21/phpunit</id>
+    <id>http://blog.woola.net/myblog/blog/2015/08/21/phpunit</id>
     <content type="html"><![CDATA[<p>不管什么时候都要养成写测试用例的好喜欢</p>
 
 <p>一定要学会写一手好测试用例！</p>
@@ -55,9 +39,9 @@
   
   <entry>
     <title type="html"><![CDATA[Php_reverse]]></title>
-    <link href="http://blog.woola.net//blog/2015/08/20/php-reverse/"/>
+    <link href="http://blog.woola.net/myblog/blog/2015/08/20/php-reverse/"/>
     <updated>2015-08-20T21:56:22+08:00</updated>
-    <id>http://blog.woola.net//blog/2015/08/20/php-reverse</id>
+    <id>http://blog.woola.net/myblog/blog/2015/08/20/php-reverse</id>
     <content type="html"><![CDATA[<h2>php 反射机制</h2>
 
 <p>如果你使用过laravel IoC 的话，一定对其强大的依赖注入机制感兴趣</p>
@@ -266,9 +250,9 @@ $private_properties = $class->getProperties(ReflectionProperty::IS_PRIVATE);
   
   <entry>
     <title type="html"><![CDATA[I Am Totally in Love With Sublime]]></title>
-    <link href="http://blog.woola.net//blog/2015/08/11/i-am-totally-in-love-with-sublime/"/>
+    <link href="http://blog.woola.net/myblog/blog/2015/08/11/i-am-totally-in-love-with-sublime/"/>
     <updated>2015-08-11T22:40:19+08:00</updated>
-    <id>http://blog.woola.net//blog/2015/08/11/i-am-totally-in-love-with-sublime</id>
+    <id>http://blog.woola.net/myblog/blog/2015/08/11/i-am-totally-in-love-with-sublime</id>
     <content type="html"><![CDATA[<h2>我已经无可救药的爱上了sublime</h2>
 
 <p>2年前接触 sublime 最开始我只是简简单单的使用，同事们都劝我抛弃IDE ,我始终没有那个闲心去弄那个配置，！</p>
@@ -297,9 +281,9 @@ $private_properties = $class->getProperties(ReflectionProperty::IS_PRIVATE);
   
   <entry>
     <title type="html"><![CDATA[I Hate Windows]]></title>
-    <link href="http://blog.woola.net//blog/2015/08/10/i-hate-windows/"/>
+    <link href="http://blog.woola.net/myblog/blog/2015/08/10/i-hate-windows/"/>
     <updated>2015-08-10T22:32:01+08:00</updated>
-    <id>http://blog.woola.net//blog/2015/08/10/i-hate-windows</id>
+    <id>http://blog.woola.net/myblog/blog/2015/08/10/i-hate-windows</id>
     <content type="html"><![CDATA[<h1>在windows下面做开发是痛苦的 </h1>
 
 <p>最开始我学习编程的时候，使用vs在windows开发，那时候是愉快的！
@@ -317,9 +301,9 @@ $private_properties = $class->getProperties(ReflectionProperty::IS_PRIVATE);
   
   <entry>
     <title type="html"><![CDATA[So Slow!]]></title>
-    <link href="http://blog.woola.net//blog/2015/08/06/so-slow/"/>
+    <link href="http://blog.woola.net/myblog/blog/2015/08/06/so-slow/"/>
     <updated>2015-08-06T22:57:40+08:00</updated>
-    <id>http://blog.woola.net//blog/2015/08/06/so-slow</id>
+    <id>http://blog.woola.net/myblog/blog/2015/08/06/so-slow</id>
     <content type="html"><![CDATA[<h1>又一个不眠夜</h1>
 
 <p>尽管思绪万千，但是还是写不出东西。
@@ -336,9 +320,9 @@ $private_properties = $class->getProperties(ReflectionProperty::IS_PRIVATE);
   
   <entry>
     <title type="html"><![CDATA[百度就是不会做产品]]></title>
-    <link href="http://blog.woola.net//blog/2014/09/11/baidu-music-is-shit/"/>
+    <link href="http://blog.woola.net/myblog/blog/2014/09/11/baidu-music-is-shit/"/>
     <updated>2014-09-11T21:37:04+08:00</updated>
-    <id>http://blog.woola.net//blog/2014/09/11/baidu-music-is-shit</id>
+    <id>http://blog.woola.net/myblog/blog/2014/09/11/baidu-music-is-shit</id>
     <content type="html"><![CDATA[<p><code>百度</code>收购<code>千千静听</code>是2006年，百度音乐自从收购千千静听后没几年就改名百度音乐，我真觉得这是一桩损人不利己的生意。我这个小脑袋瓜怎么也想不通，这尼玛是几个意思啊？</p>
 
 <p>收购千千静听后没想着怎么强化功能提升用户体验，安置流氓软件，内置广告弹窗。好说   赚钱嘛！
@@ -355,9 +339,9 @@ $private_properties = $class->getProperties(ReflectionProperty::IS_PRIVATE);
   
   <entry>
     <title type="html"><![CDATA[Python 工具网站 !]]></title>
-    <link href="http://blog.woola.net//blog/2014/05/08/python_tool_tips/"/>
+    <link href="http://blog.woola.net/myblog/blog/2014/05/08/python_tool_tips/"/>
     <updated>2014-05-08T22:57:40+08:00</updated>
-    <id>http://blog.woola.net//blog/2014/05/08/python_tool_tips</id>
+    <id>http://blog.woola.net/myblog/blog/2014/05/08/python_tool_tips</id>
     <content type="html"><![CDATA[<h1>python 工具网站 !</h1>
 
 <p>python wheel文件 下载即用，</p>
@@ -370,9 +354,9 @@ $private_properties = $class->getProperties(ReflectionProperty::IS_PRIVATE);
   
   <entry>
     <title type="html"><![CDATA[Pyquery]]></title>
-    <link href="http://blog.woola.net//blog/2014/05/08/pyquery/"/>
+    <link href="http://blog.woola.net/myblog/blog/2014/05/08/pyquery/"/>
     <updated>2014-05-08T22:36:52+08:00</updated>
-    <id>http://blog.woola.net//blog/2014/05/08/pyquery</id>
+    <id>http://blog.woola.net/myblog/blog/2014/05/08/pyquery</id>
     <content type="html"><![CDATA[<h2>python pyquery</h2>
 
 <p>pyquery，python程序员一定要了解的库，极其好用!
@@ -405,9 +389,9 @@ $private_properties = $class->getProperties(ReflectionProperty::IS_PRIVATE);
   
   <entry>
     <title type="html"><![CDATA[红van影评 !]]></title>
-    <link href="http://blog.woola.net//blog/2014/05/05/red_van/"/>
+    <link href="http://blog.woola.net/myblog/blog/2014/05/05/red_van/"/>
     <updated>2014-05-05T22:57:40+08:00</updated>
-    <id>http://blog.woola.net//blog/2014/05/05/red_van</id>
+    <id>http://blog.woola.net/myblog/blog/2014/05/05/red_van</id>
     <content type="html"><![CDATA[<p>有种feel要来一发，看了香港所谓的新锐电影   《那夜凌晨，我坐上了旺角开往大埔的红VAN》 的一点点感悟，</p>
 
 <p>唉，老实说我对这个电影本来是很期待的，但是真的不知道怎么说，不知道是不是香港电影的通病，视乎好东西到了  香港的 制作 流程里面就要变味。</p>
@@ -468,9 +452,9 @@ $private_properties = $class->getProperties(ReflectionProperty::IS_PRIVATE);
   
   <entry>
     <title type="html"><![CDATA[Mongodb 速度成法]]></title>
-    <link href="http://blog.woola.net//blog/2014/05/05/mongodb_php_python/"/>
+    <link href="http://blog.woola.net/myblog/blog/2014/05/05/mongodb_php_python/"/>
     <updated>2014-05-05T22:57:40+08:00</updated>
-    <id>http://blog.woola.net//blog/2014/05/05/mongodb_php_python</id>
+    <id>http://blog.woola.net/myblog/blog/2014/05/05/mongodb_php_python</id>
     <content type="html"><![CDATA[<p>mongo的优点就不说了，我觉得在我认证范围内的业务大部分可以用mongo,这里也主要介绍python 和php的安装和使用</p>
 
 <p>根据自己的系统选择 解压后在bin里面 有很多个工具</p>
@@ -812,9 +796,9 @@ dbpath 是自动的数据库存放位置</p>
   
   <entry>
     <title type="html"><![CDATA[Happy Tree Firend !]]></title>
-    <link href="http://blog.woola.net//blog/2014/05/05/happy_tree_friends/"/>
+    <link href="http://blog.woola.net/myblog/blog/2014/05/05/happy_tree_friends/"/>
     <updated>2014-05-05T22:57:40+08:00</updated>
-    <id>http://blog.woola.net//blog/2014/05/05/happy_tree_friends</id>
+    <id>http://blog.woola.net/myblog/blog/2014/05/05/happy_tree_friends</id>
     <content type="html"><![CDATA[<h1>happy tree friends 【吓坏了】</h1>
 
 <p><a href="#http://www.bilibili.tv/video/av24086/">link</a></p>

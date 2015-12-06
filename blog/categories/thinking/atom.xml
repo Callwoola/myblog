@@ -2,14 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Thinking | stay hungry stay foolish]]></title>
-  <link href="http://blog.woola.net//blog/categories/thinking/atom.xml" rel="self"/>
-  <link href="http://blog.woola.net//"/>
-<<<<<<< HEAD
-  <updated>2015-12-06T14:21:37+08:00</updated>
-=======
-  <updated>2015-08-26T21:40:45+08:00</updated>
->>>>>>> ec3179fcb70603be5f06cd72f8bf544ad4c0e7fd
-  <id>http://blog.woola.net//</id>
+  <link href="http://blog.woola.net/myblog/blog/categories/thinking/atom.xml" rel="self"/>
+  <link href="http://blog.woola.net/myblog/"/>
+  <updated>2015-12-06T15:03:00+08:00</updated>
+  <id>http://blog.woola.net/myblog/</id>
   <author>
     <name><![CDATA[Neo]]></name>
     <email><![CDATA[call@woola.net]]></email>
@@ -19,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[So Slow!]]></title>
-    <link href="http://blog.woola.net//blog/2015/08/06/so-slow/"/>
+    <link href="http://blog.woola.net/myblog/blog/2015/08/06/so-slow/"/>
     <updated>2015-08-06T22:57:40+08:00</updated>
-    <id>http://blog.woola.net//blog/2015/08/06/so-slow</id>
+    <id>http://blog.woola.net/myblog/blog/2015/08/06/so-slow</id>
     <content type="html"><![CDATA[<h1>又一个不眠夜</h1>
 
 <p>尽管思绪万千，但是还是写不出东西。
@@ -35,9 +31,9 @@ shit.run()
   
   <entry>
     <title type="html"><![CDATA[红van影评 !]]></title>
-    <link href="http://blog.woola.net//blog/2014/05/05/red_van/"/>
+    <link href="http://blog.woola.net/myblog/blog/2014/05/05/red_van/"/>
     <updated>2014-05-05T22:57:40+08:00</updated>
-    <id>http://blog.woola.net//blog/2014/05/05/red_van</id>
+    <id>http://blog.woola.net/myblog/blog/2014/05/05/red_van</id>
     <content type="html"><![CDATA[<p>有种feel要来一发，看了香港所谓的新锐电影   《那夜凌晨，我坐上了旺角开往大埔的红VAN》 的一点点感悟，</p>
 
 <p>唉，老实说我对这个电影本来是很期待的，但是真的不知道怎么说，不知道是不是香港电影的通病，视乎好东西到了  香港的 制作 流程里面就要变味。</p>
@@ -98,9 +94,9 @@ shit.run()
   
   <entry>
     <title type="html"><![CDATA[Happy Tree Firend !]]></title>
-    <link href="http://blog.woola.net//blog/2014/05/05/happy_tree_friends/"/>
+    <link href="http://blog.woola.net/myblog/blog/2014/05/05/happy_tree_friends/"/>
     <updated>2014-05-05T22:57:40+08:00</updated>
-    <id>http://blog.woola.net//blog/2014/05/05/happy_tree_friends</id>
+    <id>http://blog.woola.net/myblog/blog/2014/05/05/happy_tree_friends</id>
     <content type="html"><![CDATA[<h1>happy tree friends 【吓坏了】</h1>
 
 <p><a href="#http://www.bilibili.tv/video/av24086/">link</a></p>

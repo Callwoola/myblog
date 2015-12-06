@@ -1,79 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-<<<<<<< HEAD
-    <loc>http://blog.woola.net//blog/2015/12/06/test/</loc>
-    <lastmod>2015-12-06T01:20:12+08:00</lastmod>
-  </url>
-  <url>
-    <loc>http://blog.woola.net//blog/2015/12/06/too-much-thing/</loc>
+    <loc>http://blog.woola.net/myblog/blog/2015/12/06/too-much-thing/</loc>
     <lastmod>2015-12-06T00:43:26+08:00</lastmod>
   </url>
   <url>
-=======
->>>>>>> ec3179fcb70603be5f06cd72f8bf544ad4c0e7fd
-    <loc>http://blog.woola.net//blog/2015/08/21/phpunit/</loc>
+    <loc>http://blog.woola.net/myblog/blog/2015/08/21/phpunit/</loc>
     <lastmod>2015-08-21T23:29:06+08:00</lastmod>
   </url>
   <url>
-    <loc>http://blog.woola.net//blog/2015/08/20/php-reverse/</loc>
+    <loc>http://blog.woola.net/myblog/blog/2015/08/20/php-reverse/</loc>
     <lastmod>2015-08-20T21:56:22+08:00</lastmod>
   </url>
   <url>
-    <loc>http://blog.woola.net//blog/2015/08/11/i-am-totally-in-love-with-sublime/</loc>
+    <loc>http://blog.woola.net/myblog/blog/2015/08/11/i-am-totally-in-love-with-sublime/</loc>
     <lastmod>2015-08-11T22:40:19+08:00</lastmod>
   </url>
   <url>
-    <loc>http://blog.woola.net//blog/2015/08/10/i-hate-windows/</loc>
+    <loc>http://blog.woola.net/myblog/blog/2015/08/10/i-hate-windows/</loc>
     <lastmod>2015-08-10T22:32:01+08:00</lastmod>
   </url>
   <url>
-    <loc>http://blog.woola.net//blog/2015/08/06/so-slow/</loc>
+    <loc>http://blog.woola.net/myblog/blog/2015/08/06/so-slow/</loc>
     <lastmod>2015-08-06T22:57:40+08:00</lastmod>
   </url>
   <url>
-    <loc>http://blog.woola.net//blog/2014/09/11/baidu-music-is-shit/</loc>
+    <loc>http://blog.woola.net/myblog/blog/2014/09/11/baidu-music-is-shit/</loc>
     <lastmod>2014-09-11T21:37:04+08:00</lastmod>
   </url>
   <url>
-    <loc>http://blog.woola.net//blog/2014/05/08/python_tool_tips/</loc>
+    <loc>http://blog.woola.net/myblog/blog/2014/05/08/python_tool_tips/</loc>
     <lastmod>2014-05-08T22:57:40+08:00</lastmod>
   </url>
   <url>
-    <loc>http://blog.woola.net//blog/2014/05/08/pyquery/</loc>
+    <loc>http://blog.woola.net/myblog/blog/2014/05/08/pyquery/</loc>
     <lastmod>2014-05-08T22:36:52+08:00</lastmod>
   </url>
   <url>
-    <loc>http://blog.woola.net//blog/2014/05/05/red_van/</loc>
+    <loc>http://blog.woola.net/myblog/blog/2014/05/05/red_van/</loc>
     <lastmod>2014-05-05T22:57:40+08:00</lastmod>
   </url>
   <url>
-    <loc>http://blog.woola.net//blog/2014/05/05/mongodb_php_python/</loc>
+    <loc>http://blog.woola.net/myblog/blog/2014/05/05/mongodb_php_python/</loc>
     <lastmod>2014-05-05T22:57:40+08:00</lastmod>
   </url>
   <url>
-    <loc>http://blog.woola.net//blog/2014/05/05/happy_tree_friends/</loc>
+    <loc>http://blog.woola.net/myblog/blog/2014/05/05/happy_tree_friends/</loc>
     <lastmod>2014-05-05T22:57:40+08:00</lastmod>
   </url>
   <url>
-    <loc>http://blog.woola.net//blog/archives/</loc>
+    <loc>http://blog.woola.net/myblog/blog/archives/</loc>
   </url>
   <url>
-    <loc>http://blog.woola.net//</loc>
+    <loc>http://blog.woola.net/myblog/</loc>
   </url>
   <url>
-    <loc>http://blog.woola.net//links.html</loc>
+    <loc>http://blog.woola.net/myblog/links.html</loc>
   </url>
   <url>
-    <loc>http://blog.woola.net//blog/categories/life/</loc>
+    <loc>http://blog.woola.net/myblog/blog/categories/life/</loc>
   </url>
   <url>
-    <loc>http://blog.woola.net//blog/categories/thinking/</loc>
+    <loc>http://blog.woola.net/myblog/blog/categories/thinking/</loc>
   </url>
   <url>
-    <loc>http://blog.woola.net//blog/categories/mongodb/</loc>
+    <loc>http://blog.woola.net/myblog/blog/categories/mongodb/</loc>
   </url>
   <url>
-    <loc>http://blog.woola.net//blog/categories/python/</loc>
+    <loc>http://blog.woola.net/myblog/blog/categories/python/</loc>
   </url>
 </urlset>
