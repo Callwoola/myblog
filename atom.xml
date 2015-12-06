@@ -4,7 +4,7 @@
   <title><![CDATA[stay hungry stay foolish]]></title>
   <link href="http://blog.woola.net/myblog/atom.xml" rel="self"/>
   <link href="http://blog.woola.net/myblog/"/>
-  <updated>2015-12-06T15:03:00+08:00</updated>
+  <updated>2015-12-06T15:06:41+08:00</updated>
   <id>http://blog.woola.net/myblog/</id>
   <author>
     <name><![CDATA[Neo]]></name>
@@ -22,7 +22,7 @@
 
 <p>艺术灵感来源清晰的思路!</p>
 
-<p><a href="http://i.imgur.com/YcCfJ9v.jpg">Imgur</a></p>
+<p><img src="http://i.imgur.com/YcCfJ9v.jpg" alt="Imgur" /></p>
 ]]></content>
   </entry>
   
@@ -31,7 +31,7 @@
     <link href="http://blog.woola.net/myblog/blog/2015/08/21/phpunit/"/>
     <updated>2015-08-21T23:29:06+08:00</updated>
     <id>http://blog.woola.net/myblog/blog/2015/08/21/phpunit</id>
-    <content type="html"><![CDATA[<p>不管什么时候都要养成写测试用例的好喜欢</p>
+    <content type="html"><![CDATA[<p>不管什么时候都要养成写测试用例的好习惯</p>
 
 <p>一定要学会写一手好测试用例！</p>
 ]]></content>
