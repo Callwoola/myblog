@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+<<<<<<< HEAD
     <loc>http://blog.woola.net//blog/2015/12/06/test/</loc>
     <lastmod>2015-12-06T01:20:12+08:00</lastmod>
   </url>
@@ -9,6 +10,8 @@
     <lastmod>2015-12-06T00:43:26+08:00</lastmod>
   </url>
   <url>
+=======
+>>>>>>> ec3179fcb70603be5f06cd72f8bf544ad4c0e7fd
     <loc>http://blog.woola.net//blog/2015/08/21/phpunit/</loc>
     <lastmod>2015-08-21T23:29:06+08:00</lastmod>
   </url>
