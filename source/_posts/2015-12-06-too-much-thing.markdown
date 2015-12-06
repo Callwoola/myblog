@@ -10,5 +10,5 @@ categories:
 
 艺术灵感来源清晰的思路!
 
-[Imgur](http://i.imgur.com/YcCfJ9v.jpg)
+![Imgur](http://i.imgur.com/YcCfJ9v.jpg)
 

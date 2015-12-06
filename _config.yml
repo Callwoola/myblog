@@ -2,9 +2,9 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://blog.woola.net/
+url: http://blog.woola.net/myblog
 title: stay hungry stay foolish 
-subtitle: A blogging framework for hackers.
+subtitle: love Ruby.
 author: Neo
 simple_search: https://www.google.com/search
 description: stay hungry stay foolish
