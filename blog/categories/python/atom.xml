@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Python | stay hungry stay foolish]]></title>
+  <link href="http://blog.woola.net//blog/categories/python/atom.xml" rel="self"/>
+  <link href="http://blog.woola.net//"/>
+  <updated>2015-12-06T14:21:37+08:00</updated>
+  <id>http://blog.woola.net//</id>
+  <author>
+    <name><![CDATA[Neo]]></name>
+    <email><![CDATA[call@woola.net]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Python 工具网站 !]]></title>
+    <link href="http://blog.woola.net//blog/2014/05/08/python_tool_tips/"/>
+    <updated>2014-05-08T22:57:40+08:00</updated>
+    <id>http://blog.woola.net//blog/2014/05/08/python_tool_tips</id>
+    <content type="html"><![CDATA[<h1>python 工具网站 !</h1>
+
+<p>python wheel文件 下载即用，</p>
+
+<p><a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">python-sites</a></p>
+
+<p>pythontip：<a href="http://pythontip.sinaapp.com/">links</a></p>
+]]></content>
+  </entry>
+  
+</feed>

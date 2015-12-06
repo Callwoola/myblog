@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[stay hungry stay foolish]]></title>
+  <link href="http://blog.woola.net//atom.xml" rel="self"/>
+  <link href="http://blog.woola.net//"/>
+  <updated>2015-12-06T14:21:37+08:00</updated>
+  <id>http://blog.woola.net//</id>
+  <author>
+    <name><![CDATA[Neo]]></name>
+    <email><![CDATA[call@woola.net]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Test]]></title>
+    <link href="http://blog.woola.net//blog/2015/12/06/test/"/>
+    <updated>2015-12-06T01:20:12+08:00</updated>
+    <id>http://blog.woola.net//blog/2015/12/06/test</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[太多事情了, 需要清理一下思绪]]></title>
+    <link href="http://blog.woola.net//blog/2015/12/06/too-much-thing/"/>
+    <updated>2015-12-06T00:43:26+08:00</updated>
+    <id>http://blog.woola.net//blog/2015/12/06/too-much-thing</id>
+    <content type="html"><![CDATA[<p>我曾经不止一次的强调,装逼是一门艺术!</p>
+
+<p>艺术灵感来源清晰的思路!</p>
+
+<p><a href="http://i.imgur.com/YcCfJ9v.jpg">Imgur</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Phpunit]]></title>
+    <link href="http://blog.woola.net//blog/2015/08/21/phpunit/"/>
+    <updated>2015-08-21T23:29:06+08:00</updated>
+    <id>http://blog.woola.net//blog/2015/08/21/phpunit</id>
+    <content type="html"><![CDATA[<p>不管什么时候都要养成写测试用例的好喜欢</p>
+
+<p>一定要学会写一手好测试用例！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Php_reverse]]></title>
+    <link href="http://blog.woola.net//blog/2015/08/20/php-reverse/"/>
+    <updated>2015-08-20T21:56:22+08:00</updated>
+    <id>http://blog.woola.net//blog/2015/08/20/php-reverse</id>
+    <content type="html"><![CDATA[<h2>php 反射机制</h2>
+
+<p>如果你使用过laravel IoC 的话，一定对其强大的依赖注入机制感兴趣</p>
+
+<p>简单的说 laravel 的依赖注入机制离不开 php v5 后的反射机制</p>
+
+<p>So look it :</p>
+
+<p>PHP5添加了一项新的功能：Reflection。这个功能使得phper可以<code>reverse-engineer class</code>, <code>interface</code>,<code>function</code>,<code>method</code> and <code>extension</code>。通过PHP代码，就可以得到某<code>object</code>的所有信息，并且可以和它交互。</p>
+
+<p>反射是什么？</p>
+
+<p>它是指在PHP运行状态中，扩展分析PHP程序，导出或提取出关于类、方法、属性、参数等的详细信息，包括注释。这种动态获取的信息以及动态调用对象的方法的功能称为反射API。反射是操纵面向对象范型中元模型的API，其功能十分强大，可帮助我们构建复杂，可扩展的应用。
+其用途如：自动加载插件，自动生成文档，甚至可用来扩充PHP语言。
+php反射api由若干类组成，可帮助我们用来访问程序的元数据或者同相关的注释交互。借助反射我们可以获取诸如类实现了那些方法，创建一个类的实例（不同于用new创建），调用一个方法（也不同于常规调用），传递参数，动态调用类的静态方法。</p>
+
+<p>反射api是php内建的oop技术扩展，包括一些类，异常和接口，综合使用他们可用来帮助我们分析其它类，接口，方法，属性，方法和扩展。这些oop扩展被称为反射。</p>
+
+<p>通过ReflectionClass，我们可以得到Person类的以下信息：
+    * 1）常量 Contants
+    * 2）属性 Property Names
+    * 3）方法 Method Names静态
+    * 4）属性 Static Properties
+    * 5）命名空间 Namespace
+    * 6)Person类是否为final或者abstract
+例子</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="k">class</span> <span class="nc">Person</span> <span class="p">{</span>
+</span><span class='line'>    <span class="sd">/**  </span>
+</span><span class='line'><span class="sd">     * For the sake of demonstration, we&quot;re setting this private </span>
+</span><span class='line'><span class="sd">     */</span>
+</span><span class='line'>    <span class="k">private</span> <span class="nv">$_allowDynamicAttributes</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="sd">/** type=primary_autoincrement */</span>
+</span><span class='line'>    <span class="k">protected</span> <span class="nv">$id</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="sd">/** type=varchar length=255 null */</span>
+</span><span class='line'>    <span class="k">protected</span> <span class="nv">$name</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="sd">/** type=text null */</span>
+</span><span class='line'>    <span class="k">protected</span> <span class="nv">$biography</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">public</span> <span class="k">function</span> <span class="nf">getId</span><span class="p">()</span>
+</span><span class='line'>    <span class="p">{</span>
+</span><span class='line'>        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">id</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">public</span> <span class="k">function</span> <span class="nf">setId</span><span class="p">(</span><span class="nv">$v</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">{</span>
+</span><span class='line'>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">id</span> <span class="o">=</span> <span class="nv">$v</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">public</span> <span class="k">function</span> <span class="nf">getName</span><span class="p">()</span>
+</span><span class='line'>    <span class="p">{</span>
+</span><span class='line'>        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">public</span> <span class="k">function</span> <span class="nf">setName</span><span class="p">(</span><span class="nv">$v</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">{</span>
+</span><span class='line'>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$v</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">public</span> <span class="k">function</span> <span class="nf">getBiography</span><span class="p">()</span>
+</span><span class='line'>    <span class="p">{</span>
+</span><span class='line'>        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">biography</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">public</span> <span class="k">function</span> <span class="nf">setBiography</span><span class="p">(</span><span class="nv">$v</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">{</span>
+</span><span class='line'>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">biography</span> <span class="o">=</span> <span class="nv">$v</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>接下来反射它，只要把类名"Person"传递给ReflectionClass就可以了：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$class</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ReflectionClass</span><span class="p">(</span><span class="s1">&#39;Person&#39;</span><span class="p">);</span><span class="c1">//建立 Person这个类的反射类  </span>
+</span><span class='line'><span class="nv">$instance</span>  <span class="o">=</span> <span class="nv">$class</span><span class="o">-&gt;</span><span class="na">newInstanceArgs</span><span class="p">(</span><span class="nv">$args</span><span class="p">);</span><span class="c1">//相当于实例化Person 类  </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>1）获取属性(Properties)：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$properties</span> <span class="o">=</span> <span class="nv">$class</span><span class="o">-&gt;</span><span class="na">getProperties</span><span class="p">();</span>
+</span><span class='line'><span class="k">foreach</span><span class="p">(</span><span class="nv">$properties</span> <span class="k">as</span> <span class="nv">$property</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">echo</span> <span class="nv">$property</span><span class="o">-&gt;</span><span class="na">getName</span><span class="p">()</span><span class="o">.</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="c1">// 输出:  </span>
+</span><span class='line'><span class="c1">// _allowDynamicAttributes  </span>
+</span><span class='line'><span class="c1">// id  </span>
+</span><span class='line'><span class="c1">// name  </span>
+</span><span class='line'><span class="c1">// biography  </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>默认情况下，ReflectionClass会获取到所有的属性，private 和 protected的也可以。如果只想获取到private属性，就要额外传个参数：
+$private_properties = $class->getProperties(ReflectionProperty::IS_PRIVATE);
+可用参数列表：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nx">ReflectionProperty</span><span class="o">::</span><span class="na">IS_STATIC</span>
+</span><span class='line'><span class="nx">ReflectionProperty</span><span class="o">::</span><span class="na">IS_PUBLIC</span>
+</span><span class='line'><span class="nx">ReflectionProperty</span><span class="o">::</span><span class="na">IS_PROTECTED</span>
+</span><span class='line'><span class="nx">ReflectionProperty</span><span class="o">::</span><span class="na">IS_PRIVATE</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>如果要同时获取public 和private 属性，就这样写：ReflectionProperty::IS_PUBLIC | ReflectionProperty::IS_PROTECTED。
+通过$property->getName()可以得到属性名。
+2）获取注释：</p>
+
+<p>通过getDocComment可以得到写给property的注释。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="k">foreach</span><span class="p">(</span><span class="nv">$properties</span> <span class="k">as</span> <span class="nv">$property</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="nv">$property</span><span class="o">-&gt;</span><span class="na">isProtected</span><span class="p">())</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nv">$docblock</span> <span class="o">=</span> <span class="nv">$property</span><span class="o">-&gt;</span><span class="na">getDocComment</span><span class="p">();</span>
+</span><span class='line'>        <span class="nb">preg_match</span><span class="p">(</span><span class="s1">&#39;/ type\=([a-z_]*) /&#39;</span><span class="p">,</span> <span class="nv">$property</span><span class="o">-&gt;</span><span class="na">getDocComment</span><span class="p">(),</span> <span class="nv">$matches</span><span class="p">);</span>
+</span><span class='line'>        <span class="k">echo</span> <span class="nv">$matches</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="c1">// Output:  </span>
+</span><span class='line'><span class="c1">// primary_autoincrement  </span>
+</span><span class='line'><span class="c1">// varchar  </span>
+</span><span class='line'><span class="c1">// text </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3）获取类的方法
+获取方法(methods)：通过getMethods() 来获取到类的所有methods。</p>
+
+<p>4）执行类的方法：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$instance</span><span class="o">-&gt;</span><span class="na">getBiography</span><span class="p">();</span> <span class="c1">//执行Person 里的方法getBiography  </span>
+</span><span class='line'><span class="c1">//或者：  </span>
+</span><span class='line'><span class="nv">$ec</span><span class="o">=</span><span class="nv">$class</span><span class="o">-&gt;</span><span class="na">getmethod</span><span class="p">(</span><span class="s1">&#39;getName&#39;</span><span class="p">);</span>  <span class="c1">//获取Person 类中的getName方法  </span>
+</span><span class='line'><span class="nv">$ec</span><span class="o">-&gt;</span><span class="na">invoke</span><span class="p">(</span><span class="nv">$instance</span><span class="p">);</span>       <span class="c1">//执行getName 方法  </span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[I Am Totally in Love With Sublime]]></title>
+    <link href="http://blog.woola.net//blog/2015/08/11/i-am-totally-in-love-with-sublime/"/>
+    <updated>2015-08-11T22:40:19+08:00</updated>
+    <id>http://blog.woola.net//blog/2015/08/11/i-am-totally-in-love-with-sublime</id>
+    <content type="html"><![CDATA[<h2>我已经无可救药的爱上了sublime</h2>
+
+<p>2年前接触 sublime 最开始我只是简简单单的使用，同事们都劝我抛弃IDE ,我始终没有那个闲心去弄那个配置，！</p>
+
+<p>直到现在我才从这门哲学中领悟到了<code>我要成为什么要的人</code>，一个简简单单Geek范儿的人。</p>
+
+<ul>
+<li>首先你得有个sublime 个人所使用的是 2</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">import</span> <span class="nn">urllib2</span><span class="o">,</span><span class="nn">os</span><span class="p">;</span><span class="n">pf</span><span class="o">=</span><span class="s">&#39;Package Control.sublime-package&#39;</span><span class="p">;</span><span class="n">ipp</span><span class="o">=</span><span class="n">sublime</span><span class="o">.</span><span class="n">installed_packages_path</span><span class="p">();</span><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">else</span> <span class="bp">None</span><span class="p">;</span><span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ipp</span><span class="p">,</span><span class="n">pf</span><span class="p">),</span><span class="s">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s">&#39;http://sublime.wbond.net/&#39;</span><span class="o">+</span><span class="n">pf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39; &#39;</span><span class="p">,</span><span class="s">&#39;%20&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><p>然后先去吧快捷键练习十几次吧</p></li>
+<li><p>最后你就被洗脑了</p></li>
+</ul>
+
+
+<p>So fucking Good~~~~~</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[I Hate Windows]]></title>
+    <link href="http://blog.woola.net//blog/2015/08/10/i-hate-windows/"/>
+    <updated>2015-08-10T22:32:01+08:00</updated>
+    <id>http://blog.woola.net//blog/2015/08/10/i-hate-windows</id>
+    <content type="html"><![CDATA[<h1>在windows下面做开发是痛苦的 </h1>
+
+<p>最开始我学习编程的时候，使用vs在windows开发，那时候是愉快的！
+无知的人都可爱，容易得到满足，当你了解这个世界接触更多东西了。回过头来一看。记忆确实那么不堪
+我不得不说，windows是人类历史性的产品，没有他人类社会不会发展的怎么快！这句话一点也不过分！</p>
+
+<p>balabala&hellip;&hellip;&hellip;&hellip;.</p>
+
+<p>可是，使用windows，是糟糕的体验，我甚至都没有勇气写下去了！
+妈蛋我居然还使用thinkpad,越想越气！</p>
+
+<p><a href="https://github.com/Callwoola/start-server">quick settings you computer </a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[So Slow!]]></title>
+    <link href="http://blog.woola.net//blog/2015/08/06/so-slow/"/>
+    <updated>2015-08-06T22:57:40+08:00</updated>
+    <id>http://blog.woola.net//blog/2015/08/06/so-slow</id>
+    <content type="html"><![CDATA[<h1>又一个不眠夜</h1>
+
+<p>尽管思绪万千，但是还是写不出东西。
+就像吃错了东西，肚子疼但是拉不出屎！</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">shit</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[百度就是不会做产品]]></title>
+    <link href="http://blog.woola.net//blog/2014/09/11/baidu-music-is-shit/"/>
+    <updated>2014-09-11T21:37:04+08:00</updated>
+    <id>http://blog.woola.net//blog/2014/09/11/baidu-music-is-shit</id>
+    <content type="html"><![CDATA[<p><code>百度</code>收购<code>千千静听</code>是2006年，百度音乐自从收购千千静听后没几年就改名百度音乐，我真觉得这是一桩损人不利己的生意。我这个小脑袋瓜怎么也想不通，这尼玛是几个意思啊？</p>
+
+<p>收购千千静听后没想着怎么强化功能提升用户体验，安置流氓软件，内置广告弹窗。好说   赚钱嘛！
+麻烦你，百度那些做产品的，脑袋被驴踢了么？你要这么做你自己做一个播放器就行了嘛，干嘛要收购千千静听这个做纯净播放器的软件。在短时间内赚到了流量和广告费，但严重影响了的用户体验非但不只是流失而是回启到反作用的，我担心这个收购费用赚回来没有？？这些都不说亏了就亏了，但是这斯没点长进。</p>
+
+<p>再怎么说！你又不缺钱，你先投资点做好了东西再想赚钱行不行？
+然后软件开发设计那块用点心好不，非要用浏览器套个框这样来草草了事，软件卡的不行，我直接用浏览器还没这么卡（虽然没详细测试对比过，但是的确能感觉出来！）</p>
+
+<p>跨平台也做的不行，都用webkit来做了干嘛不在mac和linux上面做一个，懒，从一开始百度这些  子产品   就没有用心去做!就尼玛一个音乐播发播发器都要加p2p，还改不了速度，猛上传流量！抛开版权不说，我听了的歌，下次打开还要下载，做个加密缓存到本地也行吧！</p>
+
+<p>大家别以为百度规模大，就能在所有方面都能做得很好。举个栗子，百度当年跟阿里巴巴竞争的交易网站“百度有啊”，在淘宝面前完全是一败涂地，惨淡收场。如果当年有个相当规模的购物网站直接被百度收购，在足够的客户群支撑下，电子商务方面百度还是能插个手的。建个交易网站对百度来说也很容易，但吸引的客户群很难。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Python 工具网站 !]]></title>
+    <link href="http://blog.woola.net//blog/2014/05/08/python_tool_tips/"/>
+    <updated>2014-05-08T22:57:40+08:00</updated>
+    <id>http://blog.woola.net//blog/2014/05/08/python_tool_tips</id>
+    <content type="html"><![CDATA[<h1>python 工具网站 !</h1>
+
+<p>python wheel文件 下载即用，</p>
+
+<p><a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">python-sites</a></p>
+
+<p>pythontip：<a href="http://pythontip.sinaapp.com/">links</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Pyquery]]></title>
+    <link href="http://blog.woola.net//blog/2014/05/08/pyquery/"/>
+    <updated>2014-05-08T22:36:52+08:00</updated>
+    <id>http://blog.woola.net//blog/2014/05/08/pyquery</id>
+    <content type="html"><![CDATA[<h2>python pyquery</h2>
+
+<p>pyquery，python程序员一定要了解的库，极其好用!
+类似于jquery的语法来查询XML文档。pyquery使用lxml库来实现快速XML和HTML操作。
+使用easy_install 或者pip安装往往都是应为 lxml库没有安装造成安装失败，所以请事先安装lxml</p>
+
+<p><a href="#http://lxml.de/installation.html">download</a>
+本人使用python2.7</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">pyquery</span> <span class="kn">import</span> <span class="n">PyQuery</span> <span class="k">as</span> <span class="n">pq</span>
+</span><span class='line'><span class="kn">from</span> <span class="nn">lxml</span> <span class="kn">import</span> <span class="n">etree</span>
+</span><span class='line'><span class="kn">import</span> <span class="nn">urllib</span>
+</span><span class='line'><span class="n">d</span> <span class="o">=</span> <span class="n">pq</span><span class="p">(</span><span class="s">&#39;&lt;html&gt;&lt;/html&gt;&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="n">d</span> <span class="o">=</span> <span class="n">pq</span><span class="p">(</span><span class="n">etree</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="s">&quot;&lt;html&gt;&lt;/html&gt;&quot;</span><span class="p">))</span>
+</span><span class='line'><span class="n">d</span> <span class="o">=</span> <span class="n">pq</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s">&#39;http://google.com/&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="c"># d = pq(url=&#39;http://google.com/&#39;, opener=lambda url: urllib.urlopen(url).read())</span>
+</span><span class='line'><span class="n">d</span> <span class="o">=</span> <span class="n">pq</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">path_to_html_file</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[红van影评 !]]></title>
+    <link href="http://blog.woola.net//blog/2014/05/05/red_van/"/>
+    <updated>2014-05-05T22:57:40+08:00</updated>
+    <id>http://blog.woola.net//blog/2014/05/05/red_van</id>
+    <content type="html"><![CDATA[<p>有种feel要来一发，看了香港所谓的新锐电影   《那夜凌晨，我坐上了旺角开往大埔的红VAN》 的一点点感悟，</p>
+
+<p>唉，老实说我对这个电影本来是很期待的，但是真的不知道怎么说，不知道是不是香港电影的通病，视乎好东西到了  香港的 制作 流程里面就要变味。</p>
+
+<p>怎么说，小说应该是比电影要好很多了，各方面评论都不错，很多说书评都说不错，是香港近年来少有的好作品。作者也很谦虚，很客观的评论了小说的不足。</p>
+
+<p>然后就是宣传片了，我乍一看真是以为香港电影要翻天，有些台词我都没想到，貌似要赶美超欧了。起码我在我电影宣传片里面我看到了对这个故事很深刻的描写。</p>
+
+<p>可是。。。。 可是 我看了电影后就陷入了沉思。</p>
+
+<p>演员都是半豪华整容，任达华，惠英红，林雪 都是老戏骨，戏很到位，几个新演员就认识李璨琛</p>
+
+<p>6.0</p>
+
+<p>故事开头到时很能带入，几个香港市井对话镜头把前戏铺的很好，但是我到觉得其实也没什么难度，毕竟这个都是香港业界常态了。我估计摄影师，什么的导演不用说都知道怎么拍的好。</p>
+
+<p>好了，故事起开蛮顺利。我看过小说一点，在豆瓣里面。我尽力不被影响，前20分钟真是不错，大家都是按照正常香港人的生活方式，表达出来的。</p>
+
+<p>故事到了下车那会儿还把，每个人物的性格分的淋漓尽致，从那里开始人物的在危机面前表现出来的不愿意接收，智慧，自私都是正常的。</p>
+
+<p>好故事到这后面好都不错，几个大学生的遭遇立刻把恐怖气疯营造出来了。</p>
+
+<p>就在这之后后开始慢慢狗血了，严格来说，我主观的来说应该是那个 毒冷（粤语那个字不知道怎么打，接下来陆陆续续都有些）开始唱歌说了个我觉得跟故事完全没有必要联系在一起的歌。</p>
+
+<p><major tom>吧，然后莫名其妙的挂了。</p>
+
+<p>接着大家去追 日本人 ，和 回忆的朝鲜人都是狗血的，我觉得是降低故事档次。</p>
+
+<p>你说你没事把一个日本本搬出来，说成救心，不管怎么说 都是在间接的抬高日本文化。很难在建立强势的香港本土文化 对吧？？导演编辑 这个在电影里面可以改啊~</p>
+
+<p>然后就是强奸 大家对强奸犯的处理态度，这样安排并不能够把电影的气疯烘托出来的，真的！</p>
+
+<p>你说要是把那个人多憋几天，然后花点时间来刻画这个恶徒->再到告发，，这样一起喝成，主角几个马上变的正义凛然，下面的故事也好铺垫。</p>
+
+<p>居然就，无蛇蛇的要一人插一刀。这样要来的气氛，真的是降分，竖下拇指的。</p>
+
+<p>好，，这个也不错了，后面的气氛就处于，导演想要营造恐怖紧张，却又不必要的弄搞笑了的时间中度过..。加上后来的5毛 特技，又要加浪漫写实主意风格的拍摄方法，你好啊..，导演， 行啊导演&hellip;这样的大烂作收尾，拍出来不容易啊！</p>
+
+<p>客观的来说你前期营造的气氛对后面的拍摄真的很有利，你稍微把逻辑性弄好，合理性弄好，想拍的烂真的很难啊<del>~，陈果你并不是要因为你拍了几个艺术片就硬是要把自己的风格再加进去的啊</del>天</p>
+
+<p>好吧我们再来看下中期，好几个，乱插乱安排的镜头真的不太写意，就比如说，导演你要把主角到底要塑造成什么形象，开始的话还有救，后面你就彻底安排成了个懦夫，又没主见，又不正义，又胆小，偶尔要装下B,其他都就更无厘头了，中期就看几个老戏骨还有点看头，其他的都是狗血！</p>
+
+<p>后期把 来了个浪漫写实主义，哥你还能在扯点么。 你慢慢的代入故事，收尾个 结束了给点意境 ，给点念想 不好么，非要弄成粤语话剧！</p>
+
+<p>追车那里 就不说了，弄得我完全没有心情看下去，于是乎我不看了 。。</p>
+
+<p>我也来个务实狗血的收尾。</p>
+
+<p>这个电影不好跟  导演,现在香港电影市场,体制 各有一点的关系。 现在香港电影需要杜琪峰，尔冬升 这个的顶梁柱，陈果这些的继续拍艺术片。对吧，培养些好导演！</p>
+
+<p>演员这块更是掺不忍睹，完全在吃老本，积累的好演员都老了，新演员不知道是不是体制和产片量的原因 都慢慢有点扶不上墙，这个红van的还行，那个新古惑仔的那批就没救了。</p>
+
+<p>不是我刻薄，无脑，是我有点惋惜有点恨，</p>
+
+<p>为什么我这么恨 因为我爱它爱的深沉！！！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mongodb 速度成法]]></title>
+    <link href="http://blog.woola.net//blog/2014/05/05/mongodb_php_python/"/>
+    <updated>2014-05-05T22:57:40+08:00</updated>
+    <id>http://blog.woola.net//blog/2014/05/05/mongodb_php_python</id>
+    <content type="html"><![CDATA[<p>mongo的优点就不说了，我觉得在我认证范围内的业务大部分可以用mongo,这里也主要介绍python 和php的安装和使用</p>
+
+<p>根据自己的系统选择 解压后在bin里面 有很多个工具</p>
+
+<ul>
+<li><p>Mongod.exe 是用来连接到mongo数据库服务器的，即服务器端。</p></li>
+<li><p>Mongo.exe 是用来启动</p></li>
+<li><p>MongoDB shell的，即客户端。</p></li>
+</ul>
+
+
+<p>其他文件:</p>
+
+<ul>
+<li><p>mongodump 逻辑备份工具。</p></li>
+<li><p>mongorestore 逻辑恢复工具。</p></li>
+<li><p>mongoexport 数据导出工具。</p></li>
+<li><p>mongoimport 数据导入工具。</p></li>
+</ul>
+
+
+<p><code>启动 X:/X/bin/mongod.exe  --dbpath=x:/x/data/db</code></p>
+
+<p>(例如)
+dbpath 是自动的数据库存放位置</p>
+
+<p>好了那么现在我们就可以进入客户端了</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span><span class="n">mongo</span><span class="o">.</span><span class="na">exe</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> 4.2）创建collection并插入数据</p>
+
+<p> 在传统关系型数据库中，创建完了库后接下来会创建表，但是在mongoDB中没有“表”的概念，与其对应的一个概念是集合，即collection。</p>
+
+<p> 在shell 命令窗口键入如下命令：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">insert</span><span class="o">({</span><span class="err">&#39;</span><span class="n">name</span><span class="sc">&#39;:&#39;</span><span class="n">xumingxiang</span><span class="sc">&#39;,&#39;</span><span class="n">sex</span><span class="sc">&#39;:&#39;</span><span class="n">man</span><span class="err">&#39;</span><span class="o">})</span> <span class="c1">// 这条命令是向users 集合中插入一条数据。如果集合users不存在，则会先新建一个，然后再插入数据，参数以JSON格式传入。</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>因为我们后面要测试删除数据，所以我们再插入一条数据：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">insert</span><span class="o">({</span><span class="err">&#39;</span><span class="n">name</span><span class="err">&#39;</span><span class="o">:</span><span class="n">xiangshu</span><span class="sc">&#39;,&#39;</span><span class="n">sex</span><span class="sc">&#39;:&#39;</span><span class="n">man</span><span class="err">&#39;</span><span class="o">})</span>
+</span><span class='line'><span class="mf">4.3</span><span class="err">）</span>
+</span><span class='line'><span class="c1">//在上面4.1）和4.2）我们创建了数据库，创建了集合，还插入了两条数据，那么这些操作有没有执行成功呢？我们来查询一下：</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>在shell 命令窗口键入如下命令：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span><span class="n">show</span> <span class="n">dbs</span> <span class="c1">// 显示所有数据库  </span>
+</span><span class='line'><span class="o">&gt;</span><span class="n">show</span> <span class="n">collections</span> <span class="c1">// 显示当前数据库下的所有集合  </span>
+</span><span class='line'><span class="o">&gt;</span><span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">find</span><span class="o">()</span> <span class="c1">// 显示users集合下的所有数据文档</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> 看我用红色标记的部分。这说明我们之前的操作是成功的。我们还看到系统给每条记录分配了一个惟一主键 _id 。</p>
+
+<p>4.4）更新数据</p>
+
+<p> 现在我们要把第二条数据的sex改成女即“women”</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">update</span><span class="o">({</span><span class="err">&#39;</span><span class="n">name</span><span class="sc">&#39;:&#39;</span><span class="n">xiangshu</span><span class="err">&#39;</span><span class="o">},{</span><span class="err">&#39;</span><span class="n">$set</span><span class="err">&#39;</span><span class="o">:{</span><span class="err">&#39;</span><span class="n">sex</span><span class="sc">&#39;:&#39;</span><span class="n">women</span><span class="err">&#39;</span><span class="o">}},</span><span class="n">upsert</span><span class="o">=</span><span class="kc">true</span><span class="o">,</span><span class="n">multi</span><span class="o">=</span><span class="kc">false</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> 解释一下几个参数：</p>
+
+<p> 第一：查询的条件</p>
+
+<p> 第二：更新的字段</p>
+
+<p> 第三：如果不存在则插入</p>
+
+<p> 第四：是否允许修改多条记录</p>
+
+<p>4.5)删除记录</p>
+
+<p> 我们现在要把第一条记录即'name'为'xumingxiang'的</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'> <span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span> <span class="n">users</span><span class="o">.</span><span class="na">remove</span><span class="o">({</span><span class="err">&#39;</span><span class="n">name</span><span class="sc">&#39;:&#39;</span><span class="n">xumingxiang</span><span class="err">&#39;</span><span class="o">})</span>
+</span><span class='line'> <span class="n">我们在检验一下4</span><span class="err">）</span><span class="mi">5</span><span class="err">）</span><span class="n">两步有没有操作成功</span><span class="err">，</span><span class="n">在shell</span> <span class="n">命令窗口键入如下命令</span><span class="err">：</span>
+</span><span class='line'>
+</span><span class='line'> <span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">find</span><span class="o">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> 从输出的界面我们看到现在只剩下一条'name'为'xiangshu'的了，并且它的'sex'为'women'，这说明4）5)两步操作成功了。</p>
+
+<p> 4.6）删除所有记录</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">remove</span><span class="o">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> 4.7) 删除collection</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">drop</span><span class="o">()</span> <span class="c1">//如果删除成功会返回“true”，否则返回“false”</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>4.8）删除当前数据库</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">dropDatabase</span><span class="o">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>mongo 相关命令</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">AddUser</span><span class="o">(</span><span class="n">username</span><span class="o">,</span><span class="n">password</span><span class="o">)</span>  <span class="n">添加用户</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">auth</span><span class="o">(</span><span class="n">usrename</span><span class="o">,</span><span class="n">password</span><span class="o">)</span>     <span class="n">设置数据库连接验证</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">cloneDataBase</span><span class="o">(</span><span class="n">fromhost</span><span class="o">)</span>     <span class="n">从目标服务器克隆一个数据库</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">commandHelp</span><span class="o">(</span><span class="n">name</span><span class="o">)</span>           <span class="n">returns</span> <span class="n">the</span> <span class="n">help</span> <span class="k">for</span> <span class="n">the</span> <span class="n">command</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">copyDatabase</span><span class="o">(</span><span class="n">fromdb</span><span class="o">,</span><span class="n">todb</span><span class="o">,</span><span class="n">fromhost</span><span class="o">)</span>  <span class="n">复制数据库fromdb</span><span class="o">---</span><span class="n">源数据库名称</span><span class="err">，</span><span class="n">todb</span><span class="o">---</span><span class="n">目标数据库名称</span><span class="err">，</span><span class="n">fromhost</span><span class="o">---</span><span class="n">源数据库服务器地址</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">createCollection</span><span class="o">(</span><span class="n">name</span><span class="o">,{</span><span class="nl">size:</span><span class="mi">3333</span><span class="o">,</span><span class="nl">capped:</span><span class="mi">333</span><span class="o">,</span><span class="nl">max:</span><span class="mi">88888</span><span class="o">})</span>  <span class="n">创建一个数据集</span><span class="err">，</span><span class="n">相当于一个表</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">currentOp</span><span class="o">()</span>                 <span class="n">取消当前库的当前操作</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">dropDataBase</span><span class="o">()</span>              <span class="n">删除当前数据库</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">eval</span><span class="o">(</span><span class="n">func</span><span class="o">,</span><span class="n">args</span><span class="o">)</span>             <span class="n">run</span> <span class="n">code</span> <span class="n">server</span><span class="o">-</span><span class="n">side</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getCollection</span><span class="o">(</span><span class="n">cname</span><span class="o">)</span>        <span class="n">取得一个数据集合</span><span class="err">，</span><span class="n">同用法</span><span class="err">：</span><span class="n">db</span><span class="o">[</span><span class="err">&#39;</span><span class="n">cname</span><span class="err">&#39;</span><span class="o">]</span> <span class="n">or</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getCollenctionNames</span><span class="o">()</span>       <span class="n">取得所有数据集合的名称列表</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getLastError</span><span class="o">()</span>              <span class="n">返回最后一个错误的提示消息</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getLastErrorObj</span><span class="o">()</span>           <span class="n">返回最后一个错误的对象</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getMongo</span><span class="o">()</span>                  <span class="n">取得当前服务器的连接对象get</span> <span class="n">the</span> <span class="n">server</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getMondo</span><span class="o">().</span><span class="na">setSlaveOk</span><span class="o">()</span>     <span class="n">allow</span> <span class="k">this</span> <span class="n">connection</span> <span class="n">to</span> <span class="n">read</span> <span class="n">from</span> <span class="n">then</span> <span class="n">nonmaster</span> <span class="n">membr</span> <span class="n">of</span> <span class="n">a</span> <span class="n">replica</span> <span class="n">pair</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getName</span><span class="o">()</span>                   <span class="n">返回当操作数据库的名称</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getPrevError</span><span class="o">()</span>              <span class="n">返回上一个错误对象</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getProfilingLevel</span><span class="o">()</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getReplicationInfo</span><span class="o">()</span>        <span class="n">获得重复的数据</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getSisterDB</span><span class="o">(</span><span class="n">name</span><span class="o">)</span>           <span class="n">get</span> <span class="n">the</span> <span class="n">db</span> <span class="n">at</span> <span class="n">the</span> <span class="n">same</span> <span class="n">server</span> <span class="n">as</span> <span class="k">this</span> <span class="n">onew</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">killOp</span><span class="o">()</span>                    <span class="n">停止</span><span class="err">（</span><span class="n">杀死</span><span class="err">）</span><span class="n">在当前库的当前操作</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">printCollectionStats</span><span class="o">()</span>      <span class="n">返回当前库的数据集状态</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">printReplicationInfo</span><span class="o">()</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">printSlaveReplicationInfo</span><span class="o">()</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">printShardingStatus</span><span class="o">()</span>       <span class="n">返回当前数据库是否为共享数据库</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">removeUser</span><span class="o">(</span><span class="n">username</span><span class="o">)</span>        <span class="n">删除用户</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">repairDatabase</span><span class="o">()</span>            <span class="n">修复当前数据库</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">resetError</span><span class="o">()</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">runCommand</span><span class="o">(</span><span class="n">cmdObj</span><span class="o">)</span>          <span class="n">run</span> <span class="n">a</span> <span class="n">database</span> <span class="n">command</span><span class="o">.</span> <span class="k">if</span> <span class="n">cmdObj</span> <span class="n">is</span> <span class="n">a</span> <span class="n">string</span><span class="o">,</span> <span class="n">turns</span> <span class="n">it</span> <span class="n">into</span> <span class="o">{</span><span class="nl">cmdObj:</span><span class="mi">1</span><span class="o">}</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">setProfilingLevel</span><span class="o">(</span><span class="n">level</span><span class="o">)</span>    <span class="mi">0</span><span class="o">=</span><span class="n">off</span><span class="o">,</span><span class="mi">1</span><span class="o">=</span><span class="n">slow</span><span class="o">,</span><span class="mi">2</span><span class="o">=</span><span class="n">all</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">shutdownServer</span><span class="o">()</span>            <span class="n">关闭当前服务程序</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">version</span><span class="o">()</span>                   <span class="n">返回当前程序的版本信息</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">})</span>          <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">10</span><span class="n">的数据集</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">}).</span><span class="na">count</span><span class="o">()</span>  <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">10</span><span class="n">的数据总数</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">}).</span><span class="na">limit</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span> <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">10</span><span class="n">的数据集从第二条开始的数据集</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">}).</span><span class="na">skip</span><span class="o">(</span><span class="mi">8</span><span class="o">)</span>  <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">10</span><span class="n">的数据集从0到第八条的数据集</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">}).</span><span class="na">limit</span><span class="o">(</span><span class="mi">2</span><span class="o">).</span><span class="na">skip</span><span class="o">(</span><span class="mi">8</span><span class="o">)</span>  <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">1</span><span class="o">=</span><span class="n">的数据集从第二条到第八条的数据</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">}).</span><span class="na">sort</span><span class="o">()</span>   <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">10</span><span class="n">的排序数据集</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">findOne</span><span class="o">([</span><span class="n">query</span><span class="o">])</span>       <span class="n">返回符合条件的一条数据</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">getDB</span><span class="o">()</span>                <span class="n">返回此数据集所属的数据库名称</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">getIndexes</span><span class="o">()</span>           <span class="n">返回些数据集的索引信息</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">group</span><span class="o">({</span><span class="nl">key:</span><span class="o">...,</span><span class="nl">initial:</span><span class="o">...,</span><span class="nl">reduce:</span><span class="o">...[,</span><span class="nl">cond:</span><span class="o">...]})</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">mapReduce</span><span class="o">(</span><span class="n">mayFunction</span><span class="o">,</span><span class="n">reduceFunction</span><span class="o">,&lt;</span><span class="n">optional</span> <span class="n">params</span><span class="o">&gt;)</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">query</span><span class="o">)</span>                      <span class="n">在数据集中删除一条数据</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">renameCollection</span><span class="o">(</span><span class="n">newName</span><span class="o">)</span>          <span class="n">重命名些数据集名称</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">save</span><span class="o">(</span><span class="n">obj</span><span class="o">)</span>                          <span class="n">往数据集中插入一条数据</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">stats</span><span class="o">()</span>                            <span class="n">返回此数据集的状态</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">storageSize</span><span class="o">()</span>                      <span class="n">返回此数据集的存储大小</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">totalIndexSize</span><span class="o">()</span>                   <span class="n">返回此数据集的索引文件大小</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">totalSize</span><span class="o">()</span>                        <span class="n">返回些数据集的总大小</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">update</span><span class="o">(</span><span class="n">query</span><span class="o">,</span><span class="n">object</span><span class="o">[,</span><span class="n">upsert_bool</span><span class="o">])</span> <span class="n">在此数据集中更新一条数据</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">validate</span><span class="o">()</span>                         <span class="n">验证此数据集</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">getShardVersion</span><span class="o">()</span>                  <span class="n">返回数据集共享版本号</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>与sql语法比较</p>
+
+<table>
+<thead>
+<tr>
+<th> MongoDB语法   </th>
+<th> MySql语法 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>db.test.find({&lsquo;name&rsquo;:&lsquo;foobar&rsquo;}) </td>
+<td> select * from test where name=&lsquo;foobar&rsquo;</td>
+</tr>
+<tr>
+<td>db.test.find()                  </td>
+<td> select * from test</td>
+</tr>
+<tr>
+<td>db.test.find({&lsquo;ID&rsquo;:10}).count() </td>
+<td>select count(*) from test where ID=10</td>
+</tr>
+<tr>
+<td>db.test.find().skip(10).limit(20)     </td>
+<td>select * from test limit 10,20</td>
+</tr>
+<tr>
+<td>db.test.find({&lsquo;ID&rsquo;:{$in:[25,35,45]}}) </td>
+<td>select * from test where ID in (25,35,45)</td>
+</tr>
+<tr>
+<td>db.test.find().sort({&lsquo;ID&rsquo;:-1})        </td>
+<td>select * from test order by ID desc</td>
+</tr>
+<tr>
+<td>db.test.distinct(&lsquo;name&rsquo;,{&lsquo;ID&rsquo;:{$lt:20}})  </td>
+<td>select distinct(name) from test where ID&lt;20</td>
+</tr>
+<tr>
+<td>db.test.group({key:{&lsquo;name&rsquo;:true},cond:{&lsquo;name&rsquo;:&lsquo;foo&rsquo;},reduce:function(obj,prev){prev.msum+=obj.marks;},initial:{msum:0}})  </td>
+<td>select name,sum(marks) from test group by name</td>
+</tr>
+<tr>
+<td>db.test.find(&lsquo;this.ID&lt;20&rsquo;,{name:1})  </td>
+<td>select name from test where ID&lt;20</td>
+</tr>
+<tr>
+<td>db.test.insert({&lsquo;name&rsquo;:&lsquo;foobar&rsquo;,&lsquo;age&rsquo;:25})&lt;==>insert into test (&lsquo;name&rsquo;,&lsquo;age&rsquo;) values(&lsquo;foobar&rsquo;,25)</td>
+<td></td>
+</tr>
+<tr>
+<td>db.test.remove({})                </td>
+<td>delete * from test</td>
+</tr>
+<tr>
+<td>db.test.remove({&lsquo;age&rsquo;:20})        </td>
+<td>delete test where age=20</td>
+</tr>
+<tr>
+<td>db.test.remove({&lsquo;age&rsquo;:{$lt:20}})  </td>
+<td>elete test where age&lt;20</td>
+</tr>
+<tr>
+<td>db.test.remove({&lsquo;age&rsquo;:{$lte:20}}) </td>
+<td>delete test where age&lt;=20</td>
+</tr>
+<tr>
+<td>db.test.remove({&lsquo;age&rsquo;:{$gt:20}})  </td>
+<td>delete test where age>20</td>
+</tr>
+<tr>
+<td>db.test.remove({&lsquo;age&rsquo;:{$gte:20}}) </td>
+<td>delete test where age>=20</td>
+</tr>
+<tr>
+<td>db.test.remove({&lsquo;age&rsquo;:{$ne:20}})  </td>
+<td>delete test where age!=20</td>
+</tr>
+<tr>
+<td>db.test.update({&lsquo;name&rsquo;:&lsquo;foobar&rsquo;},{$set:{&lsquo;age&rsquo;:36}}) </td>
+<td>update test set age=36 where name=&lsquo;foobar&rsquo;</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>可视化的客户端管理工具MongoVUE</p>
+
+<p>使用mongo.exe 管理数据库虽然可行，功能也挺强大，但每次都要敲命令，即繁琐枯燥而且效率低下。下面介绍一款Windows下的可视化操作的管理工具MongoVUE</p>
+
+<p><a href="http://www.mongovue.com/downloads/">下载地址：</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Happy Tree Firend !]]></title>
+    <link href="http://blog.woola.net//blog/2014/05/05/happy_tree_friends/"/>
+    <updated>2014-05-05T22:57:40+08:00</updated>
+    <id>http://blog.woola.net//blog/2014/05/05/happy_tree_friends</id>
+    <content type="html"><![CDATA[<h1>happy tree friends 【吓坏了】</h1>
+
+<p><a href="#http://www.bilibili.tv/video/av24086/">link</a></p>
+]]></content>
+  </entry>
+  
+</feed>

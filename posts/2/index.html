@@ -1,0 +1,617 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>stay hungry stay foolish</title>
+  <meta name="author" content="Neo">
+
+  
+  <meta name="description" content="有种feel要来一发，看了香港所谓的新锐电影 《那夜凌晨，我坐上了旺角开往大埔的红VAN》 的一点点感悟， 唉，老实说我对这个电影本来是很期待的，但是真的不知道怎么说，不知道是不是香港电影的通病，视乎好东西到了 香港的 制作 流程里面就要变味。 怎么说，小说应该是比电影要好很多了，各方面评论都不错 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.woola.net//posts/2">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/myblog/atom.xml" rel="alternate" title="stay hungry stay foolish" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" type="text/css">
+<!--- MathJax Configuration -->
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+</head>
+
+<body   class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">stay hungry stay foolish</a></h1>
+  
+    <h2>love Ruby.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscribe" data-subscription="rss">
+  <li><a href="/myblog/atom.xml" rel="subscribe-rss" title="subscribe via RSS" target="_blank"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewbox="0 0 100 100"><path class="social" d="M 13.310204,73.332654 C 5.967347,73.332654 0,79.322448 0,86.621428 c 0,7.338776 5.967347,13.262246 13.310204,13.262246 7.370408,0 13.328572,-5.92245 13.328572,-13.262246 0,-7.29898 -5.958164,-13.288774 -13.328572,-13.288774 z M 0.01530612,33.978572 V 53.143878 C 12.493878,53.143878 24.229592,58.02347 33.068368,66.865306 41.894898,75.685714 46.767346,87.47449 46.767346,100 h 19.25 C 66.017346,63.592858 36.4,33.979592 0.01530612,33.978572 l 0,0 z M 0.03877552,0 V 19.17449 C 44.54796,19.17551 80.77551,55.437756 80.77551,100 H 100 C 100,44.87653 55.15102,0 0.03877552,0 z"></path></svg></a></li>
+  
+</ul>
+  
+  
+  
+  
+  
+<ul class="subscribe">
+  <li><a href="https://github.com/Callwoola" rel="subscribe-github" title="@Callwoola on GitHub" target="_blank"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewbox="0 0 100 100"><path class="social" d="M 50,0 C 22.385714,0 0,22.385714 0,50 0,77.614286 22.385714,100 50,100 77.614286,100 100,77.614286 100,50 100,22.385714 77.614286,0 50,0 z m 29.692858,79.692858 c -3.859184,3.859182 -8.351022,6.887754 -13.35,9.00306 -1.27041,0.536736 -2.560204,1.009184 -3.867348,1.415306 v -7.493878 c 0,-3.938774 -1.35102,-6.835714 -4.053062,-8.690816 1.692858,-0.163264 3.24694,-0.390816 4.663266,-0.683672 1.416326,-0.292858 2.913266,-0.716328 4.491838,-1.27041 1.57857,-0.55408 2.994896,-1.213264 4.247958,-1.97755 1.253062,-0.765306 2.458164,-1.758164 3.613266,-2.978572 1.155102,-1.220408 2.12449,-2.604082 2.905102,-4.15 0.780612,-1.545918 1.4,-3.40204 1.855102,-5.566326 0.455102,-2.164286 0.683674,-4.54898 0.683674,-7.153062 0,-5.045918 -1.643878,-9.341836 -4.931634,-12.890816 C 77.44796,33.35 77.285714,29.10204 75.463266,24.512244 l -1.22143,-0.145918 c -0.845918,-0.09796 -2.368366,0.260204 -4.565306,1.07449 -2.196938,0.814286 -4.663264,2.14796 -7.396938,4.004082 -3.87449,-1.07449 -7.893878,-1.611224 -12.061224,-1.611224 -4.19898,0 -8.203062,0.536734 -12.012246,1.611224 -1.72449,-1.17245 -3.361224,-2.139796 -4.907142,-2.905102 C 31.753062,25.77449 30.516326,25.254082 29.587756,24.97653 28.660204,24.7 27.79796,24.528572 27,24.463266 c -0.79796,-0.0653 -1.310204,-0.08062 -1.537756,-0.04898 -0.22755,0.03164 -0.390816,0.0653 -0.487754,0.09796 -1.82347,4.62245 -1.985714,8.87143 -0.487756,12.743878 -3.287754,3.54796 -4.931632,7.844898 -4.931632,12.890816 0,2.604082 0.227552,4.988776 0.683674,7.153062 0.456122,2.164286 1.07449,4.020408 1.855102,5.566326 0.780612,1.545918 1.75,2.929592 2.905102,4.15 1.155102,1.220408 2.360204,2.213266 3.613264,2.978572 1.253062,0.766326 2.669388,1.42449 4.24796,1.97755 1.578572,0.554082 3.07551,0.976532 4.491836,1.27041 1.416328,0.292856 2.970408,0.521428 4.663266,0.683672 -2.669388,1.82347 -4.004082,4.720408 -4.004082,8.690816 v 7.639796 C 36.536734,89.818368 35.083674,89.3 33.656122,88.695918 c -4.99898,-2.115306 -9.490816,-5.143878 -13.35,-9.00306 -3.859184,-3.859184 -6.887754,-8.351022 -9.00306,-13.35 C 9.1163263,61.171428 8.0071428,55.67347 8.0071428,50 c 0,-5.67347 1.1091835,-11.171428 3.2969392,-16.342858 2.115306,-4.998978 5.143878,-9.490816 9.00306,-13.35 3.859184,-3.859182 8.351022,-6.887754 13.35,-9.00306 C 38.828572,9.1163266 44.32653,8.0071428 50,8.0071428 c 5.67347,0 11.171428,1.1091838 16.342858,3.2969392 5,2.115306 9.490816,5.143878 13.35,9.00306 3.859182,3.859184 6.887754,8.351022 9.00306,13.35 2.186736,5.17245 3.295918,10.67041 3.295918,16.342858 0,5.672448 -1.109182,11.171428 -3.296938,16.342858 -2.115306,4.998978 -5.143878,9.490816 -9.00204,13.35 l 0,0 z"></path></svg></a></li>
+</ul>
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      <form action="https://www.google.com/search" method="get">
+        <fieldset role="search">
+          <input type="hidden" name="sitesearch" value="blog.woola.net/" />
+    
+          <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+        </fieldset>
+      </form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/05/red_van/">红van影评 !</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-05-05T22:57:40+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:57 pm</span></time>
+        
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>有种feel要来一发，看了香港所谓的新锐电影   《那夜凌晨，我坐上了旺角开往大埔的红VAN》 的一点点感悟，</p>
+
+<p>唉，老实说我对这个电影本来是很期待的，但是真的不知道怎么说，不知道是不是香港电影的通病，视乎好东西到了  香港的 制作 流程里面就要变味。</p>
+
+<p>怎么说，小说应该是比电影要好很多了，各方面评论都不错，很多说书评都说不错，是香港近年来少有的好作品。作者也很谦虚，很客观的评论了小说的不足。</p>
+
+<p>然后就是宣传片了，我乍一看真是以为香港电影要翻天，有些台词我都没想到，貌似要赶美超欧了。起码我在我电影宣传片里面我看到了对这个故事很深刻的描写。</p>
+
+<p>可是。。。。 可是 我看了电影后就陷入了沉思。</p>
+
+<p>演员都是半豪华整容，任达华，惠英红，林雪 都是老戏骨，戏很到位，几个新演员就认识李璨琛</p>
+
+<p>6.0</p>
+
+<p>故事开头到时很能带入，几个香港市井对话镜头把前戏铺的很好，但是我到觉得其实也没什么难度，毕竟这个都是香港业界常态了。我估计摄影师，什么的导演不用说都知道怎么拍的好。</p>
+
+<p>好了，故事起开蛮顺利。我看过小说一点，在豆瓣里面。我尽力不被影响，前20分钟真是不错，大家都是按照正常香港人的生活方式，表达出来的。</p>
+
+<p>故事到了下车那会儿还把，每个人物的性格分的淋漓尽致，从那里开始人物的在危机面前表现出来的不愿意接收，智慧，自私都是正常的。</p>
+
+<p>好故事到这后面好都不错，几个大学生的遭遇立刻把恐怖气疯营造出来了。</p>
+
+<p>就在这之后后开始慢慢狗血了，严格来说，我主观的来说应该是那个 毒冷（粤语那个字不知道怎么打，接下来陆陆续续都有些）开始唱歌说了个我觉得跟故事完全没有必要联系在一起的歌。</p>
+
+<p><major tom>吧，然后莫名其妙的挂了。</p>
+
+<p>接着大家去追 日本人 ，和 回忆的朝鲜人都是狗血的，我觉得是降低故事档次。</p>
+
+<p>你说你没事把一个日本本搬出来，说成救心，不管怎么说 都是在间接的抬高日本文化。很难在建立强势的香港本土文化 对吧？？导演编辑 这个在电影里面可以改啊~</p>
+
+<p>然后就是强奸 大家对强奸犯的处理态度，这样安排并不能够把电影的气疯烘托出来的，真的！</p>
+
+<p>你说要是把那个人多憋几天，然后花点时间来刻画这个恶徒->再到告发，，这样一起喝成，主角几个马上变的正义凛然，下面的故事也好铺垫。</p>
+
+<p>居然就，无蛇蛇的要一人插一刀。这样要来的气氛，真的是降分，竖下拇指的。</p>
+
+<p>好，，这个也不错了，后面的气氛就处于，导演想要营造恐怖紧张，却又不必要的弄搞笑了的时间中度过..。加上后来的5毛 特技，又要加浪漫写实主意风格的拍摄方法，你好啊..，导演， 行啊导演&hellip;这样的大烂作收尾，拍出来不容易啊！</p>
+
+<p>客观的来说你前期营造的气氛对后面的拍摄真的很有利，你稍微把逻辑性弄好，合理性弄好，想拍的烂真的很难啊<del>~，陈果你并不是要因为你拍了几个艺术片就硬是要把自己的风格再加进去的啊</del>天</p>
+
+<p>好吧我们再来看下中期，好几个，乱插乱安排的镜头真的不太写意，就比如说，导演你要把主角到底要塑造成什么形象，开始的话还有救，后面你就彻底安排成了个懦夫，又没主见，又不正义，又胆小，偶尔要装下B,其他都就更无厘头了，中期就看几个老戏骨还有点看头，其他的都是狗血！</p>
+
+<p>后期把 来了个浪漫写实主义，哥你还能在扯点么。 你慢慢的代入故事，收尾个 结束了给点意境 ，给点念想 不好么，非要弄成粤语话剧！</p>
+
+<p>追车那里 就不说了，弄得我完全没有心情看下去，于是乎我不看了 。。</p>
+
+<p>我也来个务实狗血的收尾。</p>
+
+<p>这个电影不好跟  导演,现在香港电影市场,体制 各有一点的关系。 现在香港电影需要杜琪峰，尔冬升 这个的顶梁柱，陈果这些的继续拍艺术片。对吧，培养些好导演！</p>
+
+<p>演员这块更是掺不忍睹，完全在吃老本，积累的好演员都老了，新演员不知道是不是体制和产片量的原因 都慢慢有点扶不上墙，这个红van的还行，那个新古惑仔的那批就没救了。</p>
+
+<p>不是我刻薄，无脑，是我有点惋惜有点恨，</p>
+
+<p>为什么我这么恨 因为我爱它爱的深沉！！！</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/05/mongodb_php_python/">Mongodb 速度成法</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-05-05T22:57:40+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:57 pm</span></time>
+        
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>mongo的优点就不说了，我觉得在我认证范围内的业务大部分可以用mongo,这里也主要介绍python 和php的安装和使用</p>
+
+<p>根据自己的系统选择 解压后在bin里面 有很多个工具</p>
+
+<ul>
+<li><p>Mongod.exe 是用来连接到mongo数据库服务器的，即服务器端。</p></li>
+<li><p>Mongo.exe 是用来启动</p></li>
+<li><p>MongoDB shell的，即客户端。</p></li>
+</ul>
+
+
+<p>其他文件:</p>
+
+<ul>
+<li><p>mongodump 逻辑备份工具。</p></li>
+<li><p>mongorestore 逻辑恢复工具。</p></li>
+<li><p>mongoexport 数据导出工具。</p></li>
+<li><p>mongoimport 数据导入工具。</p></li>
+</ul>
+
+
+<p><code>启动 X:/X/bin/mongod.exe  --dbpath=x:/x/data/db</code></p>
+
+<p>(例如)
+dbpath 是自动的数据库存放位置</p>
+
+<p>好了那么现在我们就可以进入客户端了</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span><span class="n">mongo</span><span class="o">.</span><span class="na">exe</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> 4.2）创建collection并插入数据</p>
+
+<p> 在传统关系型数据库中，创建完了库后接下来会创建表，但是在mongoDB中没有“表”的概念，与其对应的一个概念是集合，即collection。</p>
+
+<p> 在shell 命令窗口键入如下命令：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">insert</span><span class="o">({</span><span class="err">&#39;</span><span class="n">name</span><span class="sc">&#39;:&#39;</span><span class="n">xumingxiang</span><span class="sc">&#39;,&#39;</span><span class="n">sex</span><span class="sc">&#39;:&#39;</span><span class="n">man</span><span class="err">&#39;</span><span class="o">})</span> <span class="c1">// 这条命令是向users 集合中插入一条数据。如果集合users不存在，则会先新建一个，然后再插入数据，参数以JSON格式传入。</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>因为我们后面要测试删除数据，所以我们再插入一条数据：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">insert</span><span class="o">({</span><span class="err">&#39;</span><span class="n">name</span><span class="err">&#39;</span><span class="o">:</span><span class="n">xiangshu</span><span class="sc">&#39;,&#39;</span><span class="n">sex</span><span class="sc">&#39;:&#39;</span><span class="n">man</span><span class="err">&#39;</span><span class="o">})</span>
+</span><span class='line'><span class="mf">4.3</span><span class="err">）</span>
+</span><span class='line'><span class="c1">//在上面4.1）和4.2）我们创建了数据库，创建了集合，还插入了两条数据，那么这些操作有没有执行成功呢？我们来查询一下：</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>在shell 命令窗口键入如下命令：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span><span class="n">show</span> <span class="n">dbs</span> <span class="c1">// 显示所有数据库  </span>
+</span><span class='line'><span class="o">&gt;</span><span class="n">show</span> <span class="n">collections</span> <span class="c1">// 显示当前数据库下的所有集合  </span>
+</span><span class='line'><span class="o">&gt;</span><span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">find</span><span class="o">()</span> <span class="c1">// 显示users集合下的所有数据文档</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> 看我用红色标记的部分。这说明我们之前的操作是成功的。我们还看到系统给每条记录分配了一个惟一主键 _id 。</p>
+
+<p>4.4）更新数据</p>
+
+<p> 现在我们要把第二条数据的sex改成女即“women”</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">update</span><span class="o">({</span><span class="err">&#39;</span><span class="n">name</span><span class="sc">&#39;:&#39;</span><span class="n">xiangshu</span><span class="err">&#39;</span><span class="o">},{</span><span class="err">&#39;</span><span class="n">$set</span><span class="err">&#39;</span><span class="o">:{</span><span class="err">&#39;</span><span class="n">sex</span><span class="sc">&#39;:&#39;</span><span class="n">women</span><span class="err">&#39;</span><span class="o">}},</span><span class="n">upsert</span><span class="o">=</span><span class="kc">true</span><span class="o">,</span><span class="n">multi</span><span class="o">=</span><span class="kc">false</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> 解释一下几个参数：</p>
+
+<p> 第一：查询的条件</p>
+
+<p> 第二：更新的字段</p>
+
+<p> 第三：如果不存在则插入</p>
+
+<p> 第四：是否允许修改多条记录</p>
+
+<p>4.5)删除记录</p>
+
+<p> 我们现在要把第一条记录即'name'为'xumingxiang'的</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'> <span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span> <span class="n">users</span><span class="o">.</span><span class="na">remove</span><span class="o">({</span><span class="err">&#39;</span><span class="n">name</span><span class="sc">&#39;:&#39;</span><span class="n">xumingxiang</span><span class="err">&#39;</span><span class="o">})</span>
+</span><span class='line'> <span class="n">我们在检验一下4</span><span class="err">）</span><span class="mi">5</span><span class="err">）</span><span class="n">两步有没有操作成功</span><span class="err">，</span><span class="n">在shell</span> <span class="n">命令窗口键入如下命令</span><span class="err">：</span>
+</span><span class='line'>
+</span><span class='line'> <span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">find</span><span class="o">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> 从输出的界面我们看到现在只剩下一条'name'为'xiangshu'的了，并且它的'sex'为'women'，这说明4）5)两步操作成功了。</p>
+
+<p> 4.6）删除所有记录</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">remove</span><span class="o">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> 4.7) 删除collection</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">users</span><span class="o">.</span><span class="na">drop</span><span class="o">()</span> <span class="c1">//如果删除成功会返回“true”，否则返回“false”</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>4.8）删除当前数据库</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&gt;</span> <span class="n">db</span><span class="o">.</span><span class="na">dropDatabase</span><span class="o">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>mongo 相关命令</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">AddUser</span><span class="o">(</span><span class="n">username</span><span class="o">,</span><span class="n">password</span><span class="o">)</span>  <span class="n">添加用户</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">auth</span><span class="o">(</span><span class="n">usrename</span><span class="o">,</span><span class="n">password</span><span class="o">)</span>     <span class="n">设置数据库连接验证</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">cloneDataBase</span><span class="o">(</span><span class="n">fromhost</span><span class="o">)</span>     <span class="n">从目标服务器克隆一个数据库</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">commandHelp</span><span class="o">(</span><span class="n">name</span><span class="o">)</span>           <span class="n">returns</span> <span class="n">the</span> <span class="n">help</span> <span class="k">for</span> <span class="n">the</span> <span class="n">command</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">copyDatabase</span><span class="o">(</span><span class="n">fromdb</span><span class="o">,</span><span class="n">todb</span><span class="o">,</span><span class="n">fromhost</span><span class="o">)</span>  <span class="n">复制数据库fromdb</span><span class="o">---</span><span class="n">源数据库名称</span><span class="err">，</span><span class="n">todb</span><span class="o">---</span><span class="n">目标数据库名称</span><span class="err">，</span><span class="n">fromhost</span><span class="o">---</span><span class="n">源数据库服务器地址</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">createCollection</span><span class="o">(</span><span class="n">name</span><span class="o">,{</span><span class="nl">size:</span><span class="mi">3333</span><span class="o">,</span><span class="nl">capped:</span><span class="mi">333</span><span class="o">,</span><span class="nl">max:</span><span class="mi">88888</span><span class="o">})</span>  <span class="n">创建一个数据集</span><span class="err">，</span><span class="n">相当于一个表</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">currentOp</span><span class="o">()</span>                 <span class="n">取消当前库的当前操作</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">dropDataBase</span><span class="o">()</span>              <span class="n">删除当前数据库</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">eval</span><span class="o">(</span><span class="n">func</span><span class="o">,</span><span class="n">args</span><span class="o">)</span>             <span class="n">run</span> <span class="n">code</span> <span class="n">server</span><span class="o">-</span><span class="n">side</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getCollection</span><span class="o">(</span><span class="n">cname</span><span class="o">)</span>        <span class="n">取得一个数据集合</span><span class="err">，</span><span class="n">同用法</span><span class="err">：</span><span class="n">db</span><span class="o">[</span><span class="err">&#39;</span><span class="n">cname</span><span class="err">&#39;</span><span class="o">]</span> <span class="n">or</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getCollenctionNames</span><span class="o">()</span>       <span class="n">取得所有数据集合的名称列表</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getLastError</span><span class="o">()</span>              <span class="n">返回最后一个错误的提示消息</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getLastErrorObj</span><span class="o">()</span>           <span class="n">返回最后一个错误的对象</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getMongo</span><span class="o">()</span>                  <span class="n">取得当前服务器的连接对象get</span> <span class="n">the</span> <span class="n">server</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getMondo</span><span class="o">().</span><span class="na">setSlaveOk</span><span class="o">()</span>     <span class="n">allow</span> <span class="k">this</span> <span class="n">connection</span> <span class="n">to</span> <span class="n">read</span> <span class="n">from</span> <span class="n">then</span> <span class="n">nonmaster</span> <span class="n">membr</span> <span class="n">of</span> <span class="n">a</span> <span class="n">replica</span> <span class="n">pair</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getName</span><span class="o">()</span>                   <span class="n">返回当操作数据库的名称</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getPrevError</span><span class="o">()</span>              <span class="n">返回上一个错误对象</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getProfilingLevel</span><span class="o">()</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getReplicationInfo</span><span class="o">()</span>        <span class="n">获得重复的数据</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">getSisterDB</span><span class="o">(</span><span class="n">name</span><span class="o">)</span>           <span class="n">get</span> <span class="n">the</span> <span class="n">db</span> <span class="n">at</span> <span class="n">the</span> <span class="n">same</span> <span class="n">server</span> <span class="n">as</span> <span class="k">this</span> <span class="n">onew</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">killOp</span><span class="o">()</span>                    <span class="n">停止</span><span class="err">（</span><span class="n">杀死</span><span class="err">）</span><span class="n">在当前库的当前操作</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">printCollectionStats</span><span class="o">()</span>      <span class="n">返回当前库的数据集状态</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">printReplicationInfo</span><span class="o">()</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">printSlaveReplicationInfo</span><span class="o">()</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">printShardingStatus</span><span class="o">()</span>       <span class="n">返回当前数据库是否为共享数据库</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">removeUser</span><span class="o">(</span><span class="n">username</span><span class="o">)</span>        <span class="n">删除用户</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">repairDatabase</span><span class="o">()</span>            <span class="n">修复当前数据库</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">resetError</span><span class="o">()</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">runCommand</span><span class="o">(</span><span class="n">cmdObj</span><span class="o">)</span>          <span class="n">run</span> <span class="n">a</span> <span class="n">database</span> <span class="n">command</span><span class="o">.</span> <span class="k">if</span> <span class="n">cmdObj</span> <span class="n">is</span> <span class="n">a</span> <span class="n">string</span><span class="o">,</span> <span class="n">turns</span> <span class="n">it</span> <span class="n">into</span> <span class="o">{</span><span class="nl">cmdObj:</span><span class="mi">1</span><span class="o">}</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">setProfilingLevel</span><span class="o">(</span><span class="n">level</span><span class="o">)</span>    <span class="mi">0</span><span class="o">=</span><span class="n">off</span><span class="o">,</span><span class="mi">1</span><span class="o">=</span><span class="n">slow</span><span class="o">,</span><span class="mi">2</span><span class="o">=</span><span class="n">all</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">shutdownServer</span><span class="o">()</span>            <span class="n">关闭当前服务程序</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">version</span><span class="o">()</span>                   <span class="n">返回当前程序的版本信息</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">})</span>          <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">10</span><span class="n">的数据集</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">}).</span><span class="na">count</span><span class="o">()</span>  <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">10</span><span class="n">的数据总数</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">}).</span><span class="na">limit</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span> <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">10</span><span class="n">的数据集从第二条开始的数据集</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">}).</span><span class="na">skip</span><span class="o">(</span><span class="mi">8</span><span class="o">)</span>  <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">10</span><span class="n">的数据集从0到第八条的数据集</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">}).</span><span class="na">limit</span><span class="o">(</span><span class="mi">2</span><span class="o">).</span><span class="na">skip</span><span class="o">(</span><span class="mi">8</span><span class="o">)</span>  <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">1</span><span class="o">=</span><span class="n">的数据集从第二条到第八条的数据</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">find</span><span class="o">({</span><span class="nl">id:</span><span class="mi">10</span><span class="o">}).</span><span class="na">sort</span><span class="o">()</span>   <span class="n">返回test数据集ID</span><span class="o">=</span><span class="mi">10</span><span class="n">的排序数据集</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">findOne</span><span class="o">([</span><span class="n">query</span><span class="o">])</span>       <span class="n">返回符合条件的一条数据</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">getDB</span><span class="o">()</span>                <span class="n">返回此数据集所属的数据库名称</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">getIndexes</span><span class="o">()</span>           <span class="n">返回些数据集的索引信息</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">group</span><span class="o">({</span><span class="nl">key:</span><span class="o">...,</span><span class="nl">initial:</span><span class="o">...,</span><span class="nl">reduce:</span><span class="o">...[,</span><span class="nl">cond:</span><span class="o">...]})</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">mapReduce</span><span class="o">(</span><span class="n">mayFunction</span><span class="o">,</span><span class="n">reduceFunction</span><span class="o">,&lt;</span><span class="n">optional</span> <span class="n">params</span><span class="o">&gt;)</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">query</span><span class="o">)</span>                      <span class="n">在数据集中删除一条数据</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">renameCollection</span><span class="o">(</span><span class="n">newName</span><span class="o">)</span>          <span class="n">重命名些数据集名称</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">save</span><span class="o">(</span><span class="n">obj</span><span class="o">)</span>                          <span class="n">往数据集中插入一条数据</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">stats</span><span class="o">()</span>                            <span class="n">返回此数据集的状态</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">storageSize</span><span class="o">()</span>                      <span class="n">返回此数据集的存储大小</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">totalIndexSize</span><span class="o">()</span>                   <span class="n">返回此数据集的索引文件大小</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">totalSize</span><span class="o">()</span>                        <span class="n">返回些数据集的总大小</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">update</span><span class="o">(</span><span class="n">query</span><span class="o">,</span><span class="n">object</span><span class="o">[,</span><span class="n">upsert_bool</span><span class="o">])</span> <span class="n">在此数据集中更新一条数据</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">validate</span><span class="o">()</span>                         <span class="n">验证此数据集</span>
+</span><span class='line'><span class="n">db</span><span class="o">.</span><span class="na">test</span><span class="o">.</span><span class="na">getShardVersion</span><span class="o">()</span>                  <span class="n">返回数据集共享版本号</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>与sql语法比较</p>
+
+<table>
+<thead>
+<tr>
+<th> MongoDB语法   </th>
+<th> MySql语法 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>db.test.find({&lsquo;name&rsquo;:&lsquo;foobar&rsquo;}) </td>
+<td> select * from test where name=&lsquo;foobar&rsquo;</td>
+</tr>
+<tr>
+<td>db.test.find()                  </td>
+<td> select * from test</td>
+</tr>
+<tr>
+<td>db.test.find({&lsquo;ID&rsquo;:10}).count() </td>
+<td>select count(*) from test where ID=10</td>
+</tr>
+<tr>
+<td>db.test.find().skip(10).limit(20)     </td>
+<td>select * from test limit 10,20</td>
+</tr>
+<tr>
+<td>db.test.find({&lsquo;ID&rsquo;:{$in:[25,35,45]}}) </td>
+<td>select * from test where ID in (25,35,45)</td>
+</tr>
+<tr>
+<td>db.test.find().sort({&lsquo;ID&rsquo;:-1})        </td>
+<td>select * from test order by ID desc</td>
+</tr>
+<tr>
+<td>db.test.distinct(&lsquo;name&rsquo;,{&lsquo;ID&rsquo;:{$lt:20}})  </td>
+<td>select distinct(name) from test where ID&lt;20</td>
+</tr>
+<tr>
+<td>db.test.group({key:{&lsquo;name&rsquo;:true},cond:{&lsquo;name&rsquo;:&lsquo;foo&rsquo;},reduce:function(obj,prev){prev.msum+=obj.marks;},initial:{msum:0}})  </td>
+<td>select name,sum(marks) from test group by name</td>
+</tr>
+<tr>
+<td>db.test.find(&lsquo;this.ID&lt;20&rsquo;,{name:1})  </td>
+<td>select name from test where ID&lt;20</td>
+</tr>
+<tr>
+<td>db.test.insert({&lsquo;name&rsquo;:&lsquo;foobar&rsquo;,&lsquo;age&rsquo;:25})&lt;==>insert into test (&lsquo;name&rsquo;,&lsquo;age&rsquo;) values(&lsquo;foobar&rsquo;,25)</td>
+<td></td>
+</tr>
+<tr>
+<td>db.test.remove({})                </td>
+<td>delete * from test</td>
+</tr>
+<tr>
+<td>db.test.remove({&lsquo;age&rsquo;:20})        </td>
+<td>delete test where age=20</td>
+</tr>
+<tr>
+<td>db.test.remove({&lsquo;age&rsquo;:{$lt:20}})  </td>
+<td>elete test where age&lt;20</td>
+</tr>
+<tr>
+<td>db.test.remove({&lsquo;age&rsquo;:{$lte:20}}) </td>
+<td>delete test where age&lt;=20</td>
+</tr>
+<tr>
+<td>db.test.remove({&lsquo;age&rsquo;:{$gt:20}})  </td>
+<td>delete test where age>20</td>
+</tr>
+<tr>
+<td>db.test.remove({&lsquo;age&rsquo;:{$gte:20}}) </td>
+<td>delete test where age>=20</td>
+</tr>
+<tr>
+<td>db.test.remove({&lsquo;age&rsquo;:{$ne:20}})  </td>
+<td>delete test where age!=20</td>
+</tr>
+<tr>
+<td>db.test.update({&lsquo;name&rsquo;:&lsquo;foobar&rsquo;},{$set:{&lsquo;age&rsquo;:36}}) </td>
+<td>update test set age=36 where name=&lsquo;foobar&rsquo;</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>可视化的客户端管理工具MongoVUE</p>
+
+<p>使用mongo.exe 管理数据库虽然可行，功能也挺强大，但每次都要敲命令，即繁琐枯燥而且效率低下。下面介绍一款Windows下的可视化操作的管理工具MongoVUE</p>
+
+<p><a href="http://www.mongovue.com/downloads/">下载地址：</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/05/happy_tree_friends/">Happy Tree Firend !</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-05-05T22:57:40+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:57 pm</span></time>
+        
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>happy tree friends 【吓坏了】</h1>
+
+<p><a href="#http://www.bilibili.tv/video/av24086/">link</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/index.html">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Neo -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a> | Themed with <a href="https://github.com/lucaslew/whitespace">Whitespace</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
