@@ -4,7 +4,7 @@
   <title><![CDATA[stay hungry stay foolish]]></title>
   <link href="http://blog.woola.net/myblog/atom.xml" rel="self"/>
   <link href="http://blog.woola.net/myblog/"/>
-  <updated>2015-12-06T15:11:46+08:00</updated>
+  <updated>2015-12-08T22:25:39+08:00</updated>
   <id>http://blog.woola.net/myblog/</id>
   <author>
     <name><![CDATA[Neo]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Osx-xcode-install]]></title>
+    <link href="http://blog.woola.net/myblog/blog/2015/12/08/osx-xcode-install/"/>
+    <updated>2015-12-08T22:12:09+08:00</updated>
+    <id>http://blog.woola.net/myblog/blog/2015/12/08/osx-xcode-install</id>
+    <content type="html"><![CDATA[<h1>brew install 出现 configure: error: cannot run C compiled</h1>
+
+<p>当brew install <software>
+出现</p>
+
+<blockquote><p>configure: error: cannot run C compiled</p></blockquote>
+
+<p>是系统升级最新的 Mac OS X El Capitan.造成的,无法运行C编译的程序。</p>
+
+<p>Solution:
+查看log，发现这是Xcode的命令行工具造成的。</p>
+
+<p>运行以下命令：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>xcode-select --install
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>希望它可以为您节省几个小时的使用Google :)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[太多事情了, 需要清理一下思绪]]></title>
