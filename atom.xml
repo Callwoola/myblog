@@ -4,7 +4,7 @@
   <title><![CDATA[stay hungry stay foolish]]></title>
   <link href="http://blog.woola.net/myblog/atom.xml" rel="self"/>
   <link href="http://blog.woola.net/myblog/"/>
-  <updated>2016-01-07T01:08:19+08:00</updated>
+  <updated>2016-04-20T23:35:38+08:00</updated>
   <id>http://blog.woola.net/myblog/</id>
   <author>
     <name><![CDATA[Neo]]></name>
@@ -12,6 +12,102 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[我是如何使用清理我的工具的]]></title>
+    <link href="http://blog.woola.net/myblog/blog/2016/02/27/my-tool-clear-up/"/>
+    <updated>2016-02-27T01:05:07+08:00</updated>
+    <id>http://blog.woola.net/myblog/blog/2016/02/27/my-tool-clear-up</id>
+    <content type="html"><![CDATA[<p>作为一个web programmer , 我们会经常面对复杂问题, 我们是否应该胡</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Yearly-summary]]></title>
+    <link href="http://blog.woola.net/myblog/blog/2016/02/07/yearly-summary/"/>
+    <updated>2016-02-07T14:13:40+08:00</updated>
+    <id>http://blog.woola.net/myblog/blog/2016/02/07/yearly-summary</id>
+    <content type="html"><![CDATA[<p>创业不易, 我也跟着谢总等创始人们的脚步登上了这艘船. 在这里我收获了许多的开心!
+本想认真构思这一年的所思所想, 却因碎片化的记忆太多, 并没有找到好的故事线来描述!那我随意了!</p>
+
+<h3>大雄和IT部</h3>
+
+<p>&ldquo;大雄,大雄,大雄 又出bug了&rdquo; 每次听到这句话的时候我并没有沮丧, 反而我很庆幸和小窃喜,小伙伴们都非常努力的雕琢属于我们的产品.</p>
+
+<p>当我快速解决的时候我会有些小得意,当我陷入泥潭有爬出来的时候我会有释然的顿悟.
+我们每个人都已独特的性格,和闪光点
+例如我们IT部:</p>
+
+<ul>
+<li>龙哥我们的全真教道长,教我打出了咏春拳,在各种拳法上给予了我耐心的指导!</li>
+<li>海花我们的女汉子,IT部首席各种疑难杂症的大总管!</li>
+<li>鱼饼我们的装机达人,全栈小王子!</li>
+<li>俊雄我们的养生达人,前端老王子!</li>
+<li>晓晨我们的南派汪峰,UI&amp;&amp;前端杀手!</li>
+<li>可乐我们的南派汪峰的徒弟,UI怪才!</li>
+<li>少武我们的九阳真经传人,PHP圣骑士</li>
+<li>文峰我们的少年虚竹,PHP勇士</li>
+<li>何涛我们的天山童姥,拆弹部队第一勇者</li>
+<li>而我自封"雄者".</li>
+</ul>
+
+
+<p>在这里忙碌又快乐,紧张又充实!</p>
+
+<h3>在dmc大家庭的日子</h3>
+
+<p>大伙儿的给我起了大雄的昵称, 如今大雄的昵称已经注入了我生活的方方面面。同时获得快乐工作,快乐生活的两个属性.</p>
+
+<p>这让我回忆起了以前的工作, 快乐总是要对比出来的. 我记得以前的工作并没有给自己太大的代入感, 也许只能成为这个产品的一个螺丝钉. 如今工人阶级站起来了,我们想法能够成为产品的指南针,我们是能够产于这个产品的每一个细节的, 这种感觉 awesome!</p>
+
+<p>加上自己的性格比较的直,如果自己瞧不起(态度和德行)的人我会特别的反感! 然而我大都非常热爱我们团队的成员, 每个小伙伴都特别有意思!</p>
+
+<h3>我的收获</h3>
+
+<ul>
+<li>学会合理使用笔记:笔记记录日常思考 灵感创意 读书笔记 经验总结等.随着见识和阅历的增加 想法会不断完善,这个时候笔记就是我们的第二大脑!</li>
+<li>理清了对产品的认识,这样说吧:&ldquo;以前我总是觉得吃撑的时候最舒服,现在当我吃的有格调时最舒服!&rdquo;</li>
+<li>但是更多的还是收获的朋友们之间的友谊,人是社会化的动物,合理的交流能够开阔我们是视野眼界,讨论背景知识,有思想交流.如果没有,辣么通过不断努力尝试将自己的想法清楚地呈现给他人的过程把自己的思路理得更清楚,她好我也好!</li>
+</ul>
+
+
+<h3>2016的给自己的目标</h3>
+
+<ul>
+<li>越来越雄</li>
+<li>向构架师方向靠拢,我会多请龙哥吃饭,嘿嘿!</li>
+<li>学习Jeckie的气场和霸气,还有果断处理的能力.暂时没有胆量请Jeckie吃饭!</li>
+<li>blog/笔记写的越来越好!</li>
+<li>减肥到150斤!</li>
+</ul>
+
+
+<h3>互联网时代</h3>
+
+<p>哦,船长,我的船长!我们险恶的航程已经告终,
+我们的船安渡过惊涛骇浪,我们寻求的奖赏已赢得手中.
+港口已经不远,钟声我已听见,万千人众在欢呼呐喊,
+目迎着我们的船从容返航,我们的船威严而且勇敢.</p>
+
+<p>献给谢总和Jeckie,以及其他我不太熟悉领导!</p>
+
+<h3>新年祝福</h3>
+
+<ul>
+<li>预祝Jeckie和小宝宝快乐成长! :)</li>
+<li>预祝谭纯早日脱单!</li>
+<li>预龙哥跑步更加牛逼!</li>
+<li>预祝IT小伙伴们快乐工作!</li>
+<li>预祝DMC全体小伙伴们快乐工作!</li>
+</ul>
+
+
+<p>同时
+* 谢总带领咱们的DMC大家庭茁壮成长!</p>
+
+<p>原谅我的文笔我已经词穷了!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[spaceX 火箭回收 人类的一大步]]></title>
